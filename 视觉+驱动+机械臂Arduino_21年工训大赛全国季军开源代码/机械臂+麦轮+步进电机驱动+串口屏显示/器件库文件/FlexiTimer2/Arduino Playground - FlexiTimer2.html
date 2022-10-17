@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://playground.arduino.cc/Main/FlexiTimer2/ -->
+<html class="js no-touch boxshadow opacity fontface svg inlinesvg svgclippaths no-ie8compat windows desktop landscape" lang="en" style="--vh:5.75px;" data-redeviation-bs-uid="47941"><!--<![endif]--><!-- Added by HTTrack --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- /Added by HTTrack -->
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	
+
+	<title>Arduino Playground - FlexiTimer2 </title>
+	
+
+	<link rel="stylesheet" href="./Arduino Playground - FlexiTimer2_files/fonts.css" type="text/css">
+	<link rel="stylesheet" href="./Arduino Playground - FlexiTimer2_files/arduino-icons.css">
+	<link rel="stylesheet" href="./Arduino Playground - FlexiTimer2_files/animation.css"><!--[if IE 7]>
+	<link rel="stylesheet" href="//content.arduino.cc/legacy/css/arduino-icons-ie7.css"><![endif]-->
+	<!--[if gte IE 9]><!-->
+	<link rel="stylesheet" href="./Arduino Playground - FlexiTimer2_files/foundation2.css" type="text/css">
+	<!--[endif]---->
+	<!--[if IE 8]>
+		<link rel='stylesheet' href='//content.arduino.cc/legacy/css/foundation_ie8.css' type='text/css' />	
+	<![endif]-->	
+	<link rel="stylesheet" href="./Arduino Playground - FlexiTimer2_files/arduino_code_highlight.css" type="text/css">
+	<link rel="stylesheet" type="text/css" media="screen" href="./Arduino Playground - FlexiTimer2_files/typeplate.css">
+	<link rel="stylesheet" href="./Arduino Playground - FlexiTimer2_files/common.css" type="text/css">	 
+	<link rel="stylesheet" href="./Arduino Playground - FlexiTimer2_files/index.css" type="text/css"> 
+	<link href="https://plus.google.com/114839908922424087554" rel="publisher">
+    <link rel="stylesheet" href="./Arduino Playground - FlexiTimer2_files/index.v2.css" type="text/css">
+	<script async="" src="./Arduino Playground - FlexiTimer2_files/11225532.js.下载"></script><script src="./Arduino Playground - FlexiTimer2_files/iubenda-7477c61df49044b49eabbd94edfbd933.js.下载" async=""></script><script src="./Arduino Playground - FlexiTimer2_files/custom.modernizr.js.下载"></script>
+<style type="text/css">img[onload^="SVGInject("]{visibility:hidden;}</style>
+  <link rel="shortcut icon" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/favicon-48x48.png">
+  <link rel="manifest" id="ino-manifest-placeholder" href="blob:https://playground.arduino.cc/1858052c-ea86-4ab2-a2da-577336048491">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#fff">
+  <meta name="application-name">
+  <link rel="apple-touch-icon" sizes="57x57" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-icon-1024x1024.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-640x1136.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-750x1334.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-828x1792.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-1125x2436.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-1242x2208.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-1242x2688.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-1536x2048.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-1668x2224.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-1668x2388.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-2048x2732.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-1620x2160.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-1136x640.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-1334x750.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-1792x828.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-2436x1125.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-2208x1242.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-2688x1242.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-2048x1536.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-2224x1668.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-2388x1668.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-2732x2048.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/apple-touch-startup-image-2160x1620.png">
+  <link rel="icon" type="image/png" sizes="228x228" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/coast-228x228.png">
+  <meta name="msapplication-TileColor" content="#fff">
+  <meta name="msapplication-TileImage" content="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/mstile-144x144.png">
+  <meta name="msapplication-config" content="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/browserconfig.xml">
+  <link rel="yandex-tableau-widget" href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/yandex-browser-manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><style class="redeviation-bs-style" data-name="content">body>div#redeviation-bs-indicator>div{opacity:0;pointer-events:none}body>iframe#redeviation-bs-sidebar.redeviation-bs-visible,body>iframe#redeviation-bs-overlay.redeviation-bs-visible{opacity:1;pointer-events:auto}body.redeviation-bs-noscroll{overflow:hidden !important}body>div#redeviation-bs-indicator>div{position:absolute;transform:translate3d(-24px, 0, 0);top:0;left:0;width:24px !important;height:100%;background:rgba(0,0,0,0.5);border-radius:0 10px 10px 0;transition:opacity 0.3s, transform 0.3s;z-index:2}body>div#redeviation-bs-indicator>div>span{-webkit-mask:no-repeat center/24px;-webkit-mask-image:url(chrome-extension://jdbnofccmhefkmjbkkdkfiicjkgofkdh/img/icon-bookmark.svg);background-color:#ffffff;position:absolute;display:block;top:0;left:0;width:100%;height:100%}body>div#redeviation-bs-indicator[data-pos='right']{left:auto;right:0}body>div#redeviation-bs-indicator[data-pos='right']>div{transform:translate3d(24px, 0, 0);left:auto;right:0;border-radius:10px 0 0 10px}body>div#redeviation-bs-indicator.redeviation-bs-fullHeight>div{border-radius:0}body>div#redeviation-bs-indicator.redeviation-bs-hover>div{transform:translate3d(0, 0, 0);opacity:1}body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb{height:100% !important;top:0 !important}body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb>div{background:transparent}body>div#redeviation-bs-indicator[data-pos='left'].redeviation-bs-has-lsb>div>span{-webkit-mask-position-y:20px}body>iframe#redeviation-bs-sidebar{width:230px;max-width:none;height:0;z-index:2147483646;background-color:rgba(0,0,0,0.6) !important;speak:none;border:none;display:block !important;transform:translate3d(-230px, 0, 0);transition:width 0s 0.3s, height 0s 0.3s, opacity 0.3s, transform 0.3s}body>iframe#redeviation-bs-sidebar[data-pos='right']{left:auto;right:0;transform:translate3d(230px, 0, 0)}body>iframe#redeviation-bs-sidebar.redeviation-bs-visible{width:calc(100% + 230px);height:100%;transform:translate3d(0, 0, 0);transition:opacity 0.3s, transform 0.3s}body>iframe#redeviation-bs-sidebar.redeviation-bs-hideMask{background:none !important}body>iframe#redeviation-bs-sidebar.redeviation-bs-hideMask:not(.redeviation-bs-hover){width:calc(230px + 50px)}body>iframe#redeviation-bs-overlay{width:100%;max-width:none;height:100%;z-index:2147483647;border:none;speak:none;background:rgba(0,0,0,0.5) !important;transition:opacity 0.3s}
+</style><style type="text/css">@-webkit-keyframes button_clicked{50%{-webkit-transform:scale(1,1);transform:scale(1,1);opacity:0}99%{-webkit-transform:scale(.001,.001);transform:scale(.001,.001);opacity:0}100%{-webkit-transform:scale(.001,.001);transform:scale(.001,.001);opacity:1}}@keyframes button_clicked{50%{-webkit-transform:scale(1,1);transform:scale(1,1);opacity:0}99%{-webkit-transform:scale(.001,.001);transform:scale(.001,.001);opacity:0}100%{-webkit-transform:scale(.001,.001);transform:scale(.001,.001);opacity:1}}.iubenda-alert{position:fixed!important;top:0!important;left:0!important;width:100%!important;height:100%!important;z-index:2147483647!important;background-color:rgba(0,0,0,.5)!important;font-family:"Helvetica Neue",-apple-system,sans-serif!important;display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important;-webkit-box-pack:center!important;-ms-flex-pack:center!important;justify-content:center!important;font-size:16px!important}.iubenda-alert *{font-size:100%!important;width:auto!important;-webkit-appearance:none!important;-moz-appearance:none!important;appearance:none!important;background:0 0!important;-webkit-box-sizing:border-box!important;box-sizing:border-box!important;-webkit-tap-highlight-color:transparent!important;-webkit-backface-visibility:hidden!important;backface-visibility:hidden!important;font-family:-apple-system,sans-serif!important;text-decoration:none!important;color:currentColor!important;background-attachment:scroll!important;background-color:transparent!important;background-image:none!important;background-position:0 0!important;background-repeat:repeat!important;border:0!important;border-color:#000!important;border-color:currentColor!important;border-radius:0!important;border-style:none!important;border-width:medium!important;bottom:auto!important;clear:none!important;clip:auto!important;counter-increment:none!important;counter-reset:none!important;direction:inherit!important;float:none!important;font-style:inherit!important;font-variant:normal!important;font-weight:inherit!important;height:auto!important;left:auto!important;letter-spacing:normal!important;line-height:inherit!important;list-style-type:inherit!important;list-style-position:outside!important;list-style-image:none!important;margin:0!important;max-height:none!important;max-width:none!important;min-height:0!important;min-width:0!important;opacity:1;outline:0!important;overflow:visible!important;padding:0!important;position:static!important;quotes:"" ""!important;right:auto!important;table-layout:auto!important;text-align:left!important;text-indent:0!important;text-transform:none!important;top:auto!important;unicode-bidi:normal!important;vertical-align:baseline!important;visibility:inherit!important;white-space:normal!important;width:auto!important;word-spacing:normal!important;z-index:auto!important;background-origin:padding-box!important;background-origin:padding-box!important;background-clip:border-box!important;background-size:auto!important;-o-border-image:none!important;border-image:none!important;border-radius:0!important;border-radius:0!important;-webkit-box-shadow:none!important;box-shadow:none!important;-webkit-column-count:auto!important;-moz-column-count:auto!important;column-count:auto!important;-webkit-column-gap:normal!important;-moz-column-gap:normal!important;column-gap:normal!important;-webkit-column-rule:medium none #000!important;-moz-column-rule:medium none #000!important;column-rule:medium none #000!important;-webkit-column-span:none!important;-moz-column-span:none!important;column-span:none!important;-webkit-column-width:auto!important;-moz-column-width:auto!important;column-width:auto!important;-webkit-font-feature-settings:normal!important;font-feature-settings:normal!important;overflow-x:visible!important;overflow-y:visible!important;-webkit-hyphens:manual!important;-ms-hyphens:manual!important;hyphens:manual!important;-webkit-perspective:none!important;perspective:none!important;-webkit-perspective-origin:50% 50%!important;perspective-origin:50% 50%!important;text-shadow:none!important;-webkit-transition:all 0s ease 0s!important;-o-transition:all 0s ease 0s!important;transition:all 0s ease 0s!important;-webkit-transform:none!important;-ms-transform:none!important;transform:none!important;-webkit-transform-origin:50% 50%!important;-ms-transform-origin:50% 50%!important;transform-origin:50% 50%!important;-webkit-transform-style:flat!important;transform-style:flat!important;word-break:normal!important}.iubenda-alert-dialog{margin:16px!important;width:100%!important;border-radius:6px!important;background-color:#111!important;color:#f4f4f4!important}@media (min-width:320px){.iubenda-alert-dialog{width:320px!important}}.iubenda-alert-dialog-content{padding:24px 24px 0!important}.iubenda-alert-dialog-buttons{padding:24px!important;display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}.iubenda-alert-dialog-buttons button{-webkit-box-flex:1!important;-ms-flex:1!important;flex:1!important}.iubenda-alert button{-webkit-box-flex:1!important;-ms-flex:1!important;flex:1!important;-webkit-appearance:none!important;-moz-appearance:none!important;appearance:none!important;margin:4px!important;padding:8px 16px!important;border-radius:64px!important;cursor:pointer!important;font-weight:700!important;font-size:100%!important;border:0!important;color:#fff;text-align:center!important}.iubenda-alert button:focus,.iubenda-alert button:hover{opacity:.8!important}.iubenda-alert button.iubenda-button-confirm{background-color:#0073ce!important}.iubenda-alert button.iubenda-button-cancel{background-color:rgba(255,255,255,.1)!important}#iubenda-iframe{background-color:rgba(0,0,0,.8)!important;-webkit-transition:opacity .4s ease,visibility .4s ease!important;-o-transition:opacity .4s ease,visibility .4s ease!important;transition:opacity .4s ease,visibility .4s ease!important;font-size:16px!important;position:fixed!important;z-index:100000000!important;top:0!important;left:0!important;width:100%!important;height:100%!important;border:0!important;margin:0!important;padding:0!important;line-height:1.5!important;-webkit-box-align:unset!important;-ms-flex-align:unset!important;align-items:unset!important;-ms-flex-line-pack:unset!important;align-content:unset!important;-ms-flex-wrap:unset!important;flex-wrap:unset!important;-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important;-webkit-box-pack:center!important;-ms-flex-pack:center!important;justify-content:center!important;display:none!important}#iubenda-iframe *{-webkit-box-align:unset!important;-ms-flex-align:unset!important;align-items:unset!important;-ms-flex-line-pack:unset!important;align-content:unset!important;-ms-flex-wrap:unset!important;flex-wrap:unset!important;font-size:100%!important;width:auto!important;-webkit-appearance:none!important;-moz-appearance:none!important;appearance:none!important;background:0 0!important;-webkit-box-sizing:border-box!important;box-sizing:border-box!important;-webkit-tap-highlight-color:transparent!important;-webkit-backface-visibility:hidden!important;backface-visibility:hidden!important;font-family:-apple-system,sans-serif!important;text-decoration:none!important;color:currentColor!important;background-attachment:scroll!important;background-color:transparent!important;background-image:none!important;background-position:0 0!important;background-repeat:repeat!important;border:0!important;border-color:#000!important;border-color:currentColor!important;border-radius:0!important;border-style:none!important;border-width:medium!important;bottom:auto!important;clear:none!important;clip:auto!important;counter-increment:none!important;counter-reset:none!important;direction:inherit!important;float:none!important;font-style:inherit!important;font-variant:normal!important;font-weight:inherit!important;height:auto!important;left:auto!important;letter-spacing:normal!important;line-height:inherit!important;list-style-type:inherit!important;list-style-position:outside!important;list-style-image:none!important;margin:0!important;max-height:none!important;max-width:none!important;min-height:0!important;min-width:0!important;opacity:1;outline:0!important;overflow:visible!important;padding:0!important;position:static!important;quotes:"" ""!important;right:auto!important;table-layout:auto!important;text-align:left!important;text-indent:0!important;text-transform:none!important;top:auto!important;unicode-bidi:normal!important;vertical-align:baseline!important;visibility:inherit!important;white-space:normal!important;width:auto!important;word-spacing:normal!important;z-index:auto!important;background-origin:padding-box!important;background-origin:padding-box!important;background-clip:border-box!important;background-size:auto!important;-o-border-image:none!important;border-image:none!important;border-radius:0!important;border-radius:0!important;-webkit-box-shadow:none!important;box-shadow:none!important;-webkit-column-count:auto!important;-moz-column-count:auto!important;column-count:auto!important;-webkit-column-gap:normal!important;-moz-column-gap:normal!important;column-gap:normal!important;-webkit-column-rule:medium none #000!important;-moz-column-rule:medium none #000!important;column-rule:medium none #000!important;-webkit-column-span:none!important;-moz-column-span:none!important;column-span:none!important;-webkit-column-width:auto!important;-moz-column-width:auto!important;column-width:auto!important;-webkit-font-feature-settings:normal!important;font-feature-settings:normal!important;overflow-x:visible!important;overflow-y:visible!important;-webkit-hyphens:manual!important;-ms-hyphens:manual!important;hyphens:manual!important;-webkit-perspective:none!important;perspective:none!important;-webkit-perspective-origin:50% 50%!important;perspective-origin:50% 50%!important;text-shadow:none!important;-webkit-transition:all 0s ease 0s!important;-o-transition:all 0s ease 0s!important;transition:all 0s ease 0s!important;-webkit-transform:none!important;-ms-transform:none!important;transform:none!important;-webkit-transform-origin:50% 50%!important;-ms-transform-origin:50% 50%!important;transform-origin:50% 50%!important;-webkit-transform-style:flat!important;transform-style:flat!important;word-break:normal!important;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}#iubenda-iframe.iubenda-iframe-visible{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}#iubenda-iframe .iub-popover-trigger{display:inline-block!important;text-decoration:underline!important;-webkit-text-decoration-style:dashed!important;text-decoration-style:dashed!important;position:relative!important;margin-right:16px!important;cursor:pointer!important;line-height:1.25!important}#iubenda-iframe .iub-popover-trigger:after,#iubenda-iframe .iub-popover-trigger:before{content:"";display:inline-block;width:14px;height:14px;border-radius:12px;vertical-align:middle;background-size:4px;position:absolute;left:calc(100% + 2px);top:3px}#iubenda-iframe .iub-popover-trigger:before{background-color:currentColor;opacity:.35}#iubenda-iframe .iub-popover-trigger:after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='13' viewBox='0 0 7 13'%3E%3Cg fill='%23FFF' fill-rule='evenodd'%3E%3Cpath d='M2.779 1.288a1.287 1.287 0 112.574 0 1.287 1.287 0 01-2.574 0zM5.467 10.422l.903 1.851-.7.341a2.496 2.496 0 01-3.545-2.717l.818-3.252a.42.42 0 00-.178-.382.422.422 0 00-.452-.041l-.844.412-.902-1.852.843-.412a2.491 2.491 0 012.576.233 2.49 2.49 0 01.989 2.389 1.105 1.105 0 01-.02.095l-.817 3.253a.42.42 0 00.178.382c.08.059.244.142.451.041l.7-.341z'/%3E%3C/g%3E%3C/svg%3E");background-position:center;background-repeat:no-repeat}#iubenda-iframe .iub-popover{position:absolute!important;top:24px!important;bottom:0!important;left:0!important;right:0!important;border-radius:4px!important;background-color:#fff!important;color:#222!important;z-index:2!important;-webkit-box-shadow:0 0 32px rgba(0,0,0,.1)!important;box-shadow:0 0 32px rgba(0,0,0,.1)!important;opacity:0!important;visibility:hidden!important;-webkit-transform:translateY(24px)!important;-ms-transform:translateY(24px)!important;transform:translateY(24px)!important;-webkit-transition:opacity .3s ease,visibility .3s ease,-webkit-transform .3s ease!important;transition:opacity .3s ease,visibility .3s ease,-webkit-transform .3s ease!important;-o-transition:opacity .3s ease,visibility .3s ease,transform .3s ease!important;transition:opacity .3s ease,visibility .3s ease,transform .3s ease!important;transition:opacity .3s ease,visibility .3s ease,transform .3s ease,-webkit-transform .3s ease!important;display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-orient:vertical!important;-webkit-box-direction:normal!important;-ms-flex-direction:column!important;flex-direction:column!important;z-index:99!important;pointer-events:none!important;overflow:hidden!important}#iubenda-iframe .iub-popover-header{-ms-flex-negative:0!important;flex-shrink:0!important;display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-pack:justify!important;-ms-flex-pack:justify!important;justify-content:space-between!important;z-index:1!important;-webkit-box-shadow:0 16px 16px #fff!important;box-shadow:0 16px 16px #fff!important}#iubenda-iframe .iub-popover-header>*{padding:24px!important;padding-bottom:0!important}#iubenda-iframe .iub-popover-header-title{font-size:18px!important;font-weight:700!important}#iubenda-iframe .iub-popover-header-close{font-size:24px!important;font-weight:300!important;cursor:pointer!important;line-height:1!important;position:relative!important;top:-2px!important}#iubenda-iframe .iub-popover-content{font-size:14px!important;-webkit-box-flex:1!important;-ms-flex:1!important;flex:1!important;font-weight:300!important;line-height:1.5!important;position:relative!important}#iubenda-iframe .iub-popover-content>div{padding:0 24px!important;overflow-y:auto!important;height:100%!important}#iubenda-iframe .iub-popover-content>div:after,#iubenda-iframe .iub-popover-content>div:before{content:"";display:block;height:24px}#iubenda-iframe .iub-popover-content h3{margin-bottom:16px!important;font-weight:700!important}#iubenda-iframe .iub-popover-content p:not(:last-of-type){margin-bottom:16px!important}#iubenda-iframe .iub-popover-content a{text-decoration:underline!important;cursor:pointer!important;opacity:.8!important}#iubenda-iframe .iub-popover-content b,#iubenda-iframe .iub-popover-content strong{font-weight:700!important}#iubenda-iframe .iub-popover-content em,#iubenda-iframe .iub-popover-content i{font-style:italic!important}#iubenda-iframe .iub-popover-content:after{position:absolute;content:"";display:block;height:24px;pointer-events:none;left:0;right:0;bottom:0;background:-webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,0)),to(white));background:-o-linear-gradient(top,rgba(255,255,255,0) 0,#fff 100%);background:linear-gradient(180deg,rgba(255,255,255,0) 0,#fff 100%)}#iubenda-iframe .iub-popover{top:25%!important}#iubenda-iframe.iub-popover-visible .iub-popover{opacity:1!important;visibility:visible!important;-webkit-transform:translateY(0)!important;-ms-transform:translateY(0)!important;transform:translateY(0)!important;pointer-events:auto!important}#iubenda-iframe.iub-popover-visible #iubenda-iframe-popup:before{opacity:1;visibility:visible;pointer-events:auto}#iubenda-iframe .iubenda-iframe-spinner{position:fixed!important}#iubenda-iframe .iub-legitimate-interest-checkbox{padding:16px!important;border-radius:4px!important;background-color:rgba(0,0,0,.02)!important;display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-pack:justify!important;-ms-flex-pack:justify!important;justify-content:space-between!important;-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important;margin-top:10px!important}#iubenda-iframe .iub-legitimate-interest-checkbox label{margin-right:8px!important;-webkit-box-flex:1!important;-ms-flex:1!important;flex:1!important;font-weight:400!important}#iubenda-iframe .iub-legitimate-interest-checkbox input[type=checkbox]{-moz-appearance:none!important;appearance:none!important;-webkit-appearance:none!important;border:0!important;margin:0!important;width:24px!important;height:24px!important;border-radius:4px!important;-webkit-box-shadow:inset 0 0 0 2px rgba(0,0,0,.35)!important;box-shadow:inset 0 0 0 2px rgba(0,0,0,.35)!important;background-color:#fff!important;-ms-flex-negative:0!important;flex-shrink:0!important;cursor:pointer!important}#iubenda-iframe .iub-legitimate-interest-checkbox input[type=checkbox]:checked{-webkit-box-shadow:none!important;box-shadow:none!important;background-color:#1cc691!important;background-image:url("data:image/svg+xml,%3C%3Fxml version='1.0'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' id='Capa_1' enable-background='new 0 0 515.556 515.556' height='512px' viewBox='0 0 515.556 515.556' width='512px' class=''%3E%3Cg%3E%3Cpath d='m0 274.226 176.549 176.886 339.007-338.672-48.67-47.997-290.337 290-128.553-128.552z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%23FFFFFF'/%3E%3C/g%3E%3C/svg%3E%0A")!important;background-position:center!important;background-repeat:no-repeat!important;background-size:14px!important}#iubenda-iframe #iubenda-iframe-popup{position:relative!important;width:800px!important;height:650px!important;-webkit-box-shadow:0 0 16px rgba(0,0,0,.02)!important;box-shadow:0 0 16px rgba(0,0,0,.02)!important;border-radius:4px!important}#iubenda-iframe #iubenda-iframe-popup:before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.5);z-index:98;opacity:0;visibility:hidden;pointer-events:none;-webkit-transition:opacity .3s ease,visibility .3s ease;-o-transition:opacity .3s ease,visibility .3s ease;transition:opacity .3s ease,visibility .3s ease}@media (max-height:649px){#iubenda-iframe #iubenda-iframe-popup{height:calc(100% - 32px)!important}}@media (max-width:799px){#iubenda-iframe #iubenda-iframe-popup{width:calc(100% - 32px)!important}}#iubenda-iframe .iubenda-iframe-close-btn{cursor:pointer!important;width:24px!important;height:24px!important;border-radius:24px!important;display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-pack:center!important;-ms-flex-pack:center!important;justify-content:center!important;-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important;font-weight:300!important;background-color:#fff!important;position:absolute!important;top:0!important;right:0!important;-webkit-transform:translate(50%,-50%)!important;-ms-transform:translate(50%,-50%)!important;transform:translate(50%,-50%)!important;-webkit-transition:-webkit-transform .4s ease!important;transition:-webkit-transform .4s ease!important;-o-transition:transform .4s ease!important;transition:transform .4s ease!important;transition:transform .4s ease,-webkit-transform .4s ease!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='21' viewBox='0 0 21 21'%3E%3Cpath fill='%23000' fill-rule='nonzero' d='M18.5.379L20.621 2.5l-8 8 8 8-2.121 2.121-8-8-8 8L.379 18.5l8-8-8-8L2.5.379l8 8z'/%3E%3C/svg%3E")!important;background-size:8px 8px!important;background-repeat:no-repeat!important;background-position:center!important;-webkit-box-shadow:0 0 32px rgba(0,0,0,.3)!important;box-shadow:0 0 32px rgba(0,0,0,.3)!important}#iubenda-iframe .iubenda-iframe-close-btn:hover{-webkit-transform:translate(50%,-50%) scale(1.15)!important;-ms-transform:translate(50%,-50%) scale(1.15)!important;transform:translate(50%,-50%) scale(1.15)!important}@media (max-width:799px){#iubenda-iframe .iubenda-iframe-close-btn{width:36px!important;height:36px!important;border-radius:36px!important;-webkit-transform:translate(25%,-25%)!important;-ms-transform:translate(25%,-25%)!important;transform:translate(25%,-25%)!important;-webkit-transition:none!important;-o-transition:none!important;transition:none!important}#iubenda-iframe .iubenda-iframe-close-btn:hover{-webkit-transform:translate(25%,-25%)!important;-ms-transform:translate(25%,-25%)!important;transform:translate(25%,-25%)!important}}#iubenda-iframe iframe{width:100%!important;height:100%!important}#iubenda-iframe #iubenda-iframe-content{height:100%!important;display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-orient:vertical!important;-webkit-box-direction:normal!important;-ms-flex-direction:column!important;flex-direction:column!important}#iubenda-iframe .iubenda-modal-navigation{position:relative!important;z-index:3!important}#iubenda-iframe .iubenda-modal-navigation:not(.iubenda-modal-navigation-brand){color:#555!important;-webkit-box-shadow:0 18px 10px -8px #fff!important;box-shadow:0 18px 10px -8px #fff!important}@media (max-width:799px){#iubenda-iframe .iubenda-modal-navigation:not(.iubenda-modal-navigation-brand){-webkit-box-shadow:0 28px 12px -8px #fff!important;box-shadow:0 28px 12px -8px #fff!important}}#iubenda-iframe .iubenda-modal-navigation-brand{position:relative;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.075)!important;box-shadow:0 1px 0 rgba(0,0,0,.075)!important}#iubenda-iframe .iubenda-modal-navigation-brand .iubenda-modal-navigation-logo{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-negative:0!important;flex-shrink:0!important;-webkit-box-flex:1!important;-ms-flex:1!important;flex:1!important;margin-right:16px!important}#iubenda-iframe .iubenda-modal-navigation-brand .iubenda-modal-navigation-logo img{max-width:192px!important;max-height:56px!important;min-width:auto!important;min-height:auto!important}@media (max-width:799px){#iubenda-iframe .iubenda-modal-navigation-brand .iubenda-modal-navigation-logo img{max-width:75%!important}}#iubenda-iframe .iubenda-modal-navigation-brand .purposes-top{-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important}#iubenda-iframe .iubenda-iframe-top-container{-webkit-box-flex:1!important;-ms-flex:1!important;flex:1!important;background-color:#fff!important;overflow:hidden!important;border-radius:4px!important}#iubenda-iframe .iubenda-iframe-top-container.bottom-border-radius{border-radius:0 0 4px 4px!important}#iubenda-iframe .zero-border-radius{border-radius:0!important}#iubenda-iframe .zero-bottom-border-radius{border-bottom-left-radius:0!important;border-bottom-right-radius:0!important}#iubenda-iframe .iubenda-iframe-footer{background-color:#fff!important;color:#555!important;font-size:16px!important;position:relative!important;z-index:10!important;border-bottom-left-radius:4px!important;border-bottom-right-radius:4px!important}#iubenda-iframe .iubenda-iframe-footer:not(.iubenda-iframe-footer-absolute):before{content:"";height:48px;display:block;width:100%;-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;background:-webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,0)),to(white));background:-o-linear-gradient(top,rgba(255,255,255,0) 0,#fff 100%);background:linear-gradient(to bottom,rgba(255,255,255,0) 0,#fff 100%);position:absolute;bottom:100%;pointer-events:none}@media (min-width:800px){#iubenda-iframe .iubenda-iframe-footer:not(.iubenda-iframe-footer-absolute)>*{margin-top:8px!important}}#iubenda-iframe .iubenda-iframe-footer.iubenda-iframe-footer-absolute{position:absolute!important;bottom:0!important;left:0!important;width:100%!important;background:-webkit-gradient(linear,left bottom,left top,color-stop(80%,#fff),to(rgba(255,255,255,0)))!important;background:-o-linear-gradient(bottom,#fff 80%,rgba(255,255,255,0) 100%)!important;background:linear-gradient(0deg,#fff 80%,rgba(255,255,255,0) 100%)!important;pointer-events:none!important}#iubenda-iframe .iubenda-iframe-footer.iubenda-iframe-footer-absolute>*{pointer-events:auto!important}#iubenda-iframe .iubenda-iframe-footer #iubBackBtn{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important;-webkit-box-pack:center!important;-ms-flex-pack:center!important;justify-content:center!important;border-radius:4px!important;color:rgba(0,0,0,.4)!important;font-size:13px!important;font-weight:700!important;cursor:pointer!important}@media (max-width:799px){#iubenda-iframe .iubenda-iframe-footer #iubBackBtn{text-align:center!important;width:100%!important;margin:16px 0 20px!important}}@media (min-width:800px){#iubenda-iframe .iubenda-iframe-footer #iubBackBtn{padding:8px 10px!important;border:1px solid rgba(0,0,0,.25)!important}}#iubenda-iframe .iubenda-iframe-footer #iubBackBtn svg{margin-right:4px!important;width:16px!important;height:16px!important}@media (min-width:800px){#iubenda-iframe .iubenda-iframe-footer{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important;-webkit-box-pack:justify!important;-ms-flex-pack:justify!important;justify-content:space-between!important}#iubenda-iframe .iubenda-iframe-footer.iubenda-iframe-footer-absolute #iubFooterIabBtnContainer{opacity:0!important;pointer-events:none!important;-webkit-transform:translateY(16px)!important;-ms-transform:translateY(16px)!important;transform:translateY(16px)!important}}@media (max-width:799px){#iubenda-iframe .iubenda-iframe-footer{text-align:center!important}#iubenda-iframe .iubenda-iframe-footer #iubFooterIabBtnContainer{position:absolute!important;bottom:6px!important;left:50%!important;-webkit-transform:translateX(-50%)!important;-ms-transform:translateX(-50%)!important;transform:translateX(-50%)!important;margin:0!important;width:100%!important}#iubenda-iframe .iubenda-iframe-footer #iubFooterIabBtnContainer+#iubFooterBtnContainer{-webkit-transform:translateY(-10px)!important;-ms-transform:translateY(-10px)!important;transform:translateY(-10px)!important}#iubenda-iframe .iubenda-iframe-footer.iubenda-iframe-footer-absolute{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical!important;-webkit-box-direction:normal!important;-ms-flex-direction:column!important;flex-direction:column!important;padding:0!important;text-align:center!important}#iubenda-iframe .iubenda-iframe-footer.iubenda-iframe-footer-absolute #iubFooterBtnContainer,#iubenda-iframe .iubenda-iframe-footer.iubenda-iframe-footer-absolute #iubFooterIabBtnContainer{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}#iubenda-iframe .iubenda-iframe-footer.iubenda-iframe-footer-absolute #iubBackBtn{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2;margin-top:0!important;padding-top:0!important;margin-top:-4px!important}#iubenda-iframe .iubenda-iframe-footer.iubenda-iframe-footer-absolute #iubFooterIabBtnContainer{opacity:0!important;pointer-events:none!important;-webkit-transform:translate(-50%,16px)!important;-ms-transform:translate(-50%,16px)!important;transform:translate(-50%,16px)!important}#iubenda-iframe .iubenda-iframe-footer.iubenda-iframe-footer-absolute #iubFooterIabBtnContainer+#iubFooterBtnContainer{-webkit-transform:translateY(0)!important;-ms-transform:translateY(0)!important;transform:translateY(0)!important}}#iubenda-iframe .iubenda-iframe-footer>*{-webkit-transition:opacity .4s ease,-webkit-transform .4s ease!important;transition:opacity .4s ease,-webkit-transform .4s ease!important;-o-transition:opacity .4s ease,transform .4s ease!important;transition:opacity .4s ease,transform .4s ease!important;transition:opacity .4s ease,transform .4s ease,-webkit-transform .4s ease!important;margin:24px 20px!important}@media (max-width:799px){#iubenda-iframe .iubenda-iframe-footer>*{margin:16px 12px!important}}#iubenda-iframe #iubFooterBtnIab{-webkit-appearance:none!important;-moz-appearance:none!important;appearance:none!important;display:block!important;width:100%!important;font-size:12px!important;text-decoration:underline!important;color:currentColor!important;text-align:center!important;cursor:pointer!important}#iubenda-iframe #iubFooterBtnIab:hover{opacity:.6!important}#iubenda-iframe #iubFooterBtnContainer button{-webkit-box-flex:1!important;-ms-flex:1!important;flex:1!important;-webkit-appearance:none!important;-moz-appearance:none!important;appearance:none!important;margin:4px!important;padding:8px 24px!important;border-radius:64px!important;cursor:pointer!important;font-weight:700!important;font-size:100%!important;background-color:#0073ce!important;color:#fff!important;text-align:center!important;border-color:transparent!important}#iubenda-iframe #iubFooterBtnContainer button:focus,#iubenda-iframe #iubFooterBtnContainer button:hover{opacity:.8!important}@media (min-width:800px){#iubenda-iframe #iubFooterBtnContainer{-ms-flex-item-align:end!important;align-self:end!important;margin-left:auto!important}}@media (max-width:799px){#iubenda-iframe #iubFooterBtnContainer{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}#iubenda-iframe #iubFooterBtnContainer button{-webkit-box-flex:1!important;-ms-flex:1!important;flex:1!important}}#iubenda-iframe .purposes-top-right{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;position:relative!important;text-align:right!important;-webkit-box-pack:end!important;-ms-flex-pack:end!important;justify-content:flex-end!important;max-width:50%!important}#iubenda-iframe .purposes-top-right>*{-ms-flex-negative:0!important;flex-shrink:0!important}#iubenda-iframe .purposes-top-right .purposes-btn-cp{-webkit-box-ordinal-group:2!important;-ms-flex-order:1!important;order:1!important;opacity:1!important;-webkit-transition:opacity .4s ease!important;-o-transition:opacity .4s ease!important;transition:opacity .4s ease!important;display:-webkit-inline-box!important;display:-ms-inline-flexbox!important;display:inline-flex!important;max-width:100%!important}#iubenda-iframe .purposes-top-right .purposes-btn-cp svg{-ms-flex-negative:0!important;flex-shrink:0!important}#iubenda-iframe .purposes-top-right .purposes-btn-cp span{display:block;overflow:hidden!important;-o-text-overflow:ellipsis!important;text-overflow:ellipsis!important;white-space:nowrap!important}#iubenda-iframe .purposes-top-right .iub-iframe-brand-button{-webkit-box-ordinal-group:3!important;-ms-flex-order:2!important;order:2!important}#iubenda-iframe .purposes-top-right .iub-iframe-brand-button.hover{width:154px!important}#iubenda-iframe .purposes-top-right .iub-iframe-brand-button.hover svg{margin-left:-30px!important}@media (max-width:799px){#iubenda-iframe .purposes-top-right .iub-iframe-brand-button.hover~.purposes-btn-cp{pointer-events:none!important;opacity:0!important}}#iubenda-iframe .iub-iframe-brand-button{width:42px!important;height:38px!important;margin-left:8px!important;margin-right:-24px!important;color:currentColor!important;display:inline-block!important;background-color:rgba(0,0,0,.075)!important;overflow:hidden!important;border-top-left-radius:32px!important;border-bottom-left-radius:32px!important;cursor:pointer!important;-webkit-transition:width .4s ease,-webkit-transform .4s ease!important;transition:width .4s ease,-webkit-transform .4s ease!important;-o-transition:transform .4s ease,width .4s ease!important;transition:transform .4s ease,width .4s ease!important;transition:transform .4s ease,width .4s ease,-webkit-transform .4s ease!important}#iubenda-iframe .iub-iframe-brand-button svg{-webkit-transition:margin .4s ease!important;-o-transition:margin .4s ease!important;transition:margin .4s ease!important;height:38px!important;width:174px!important;margin-left:4px!important}@media (max-width:799px){#iubenda-iframe .iub-iframe-brand-button{margin-right:-16px!important}}#iubenda-iframe #iubenda-iframe-content.cookie-policy-no-logo #purposes-container .iubenda-modal-navigation-logo{display:none}#iubenda-iframe #iubenda-iframe-content.cookie-policy-no-logo .iubenda-iframe-footer #iubBackBtn{display:none!important}#iubenda-iframe #iubenda-iframe-content:not(.cookie-policy-no-logo) #purposes-container .purposes-btn-back{display:none}#iubenda-iframe #iubenda-iframe-content:not(.cookie-policy-no-logo) .iubenda-modal-navigation-brand .purposes-top>div{-webkit-box-flex:1!important;-ms-flex:1!important;flex:1!important}#iab-container .iab-top-container{padding:24px!important;font-size:16px!important;font-family:Helvetica,Helvetica Neue,Arial,sans-serif!important;background-color:#fff!important;border-radius:0!important;border-top-left-radius:5px!important;border-top-right-radius:5px!important;-ms-flex-negative:0!important;flex-shrink:0!important;display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-pack:justify!important;-ms-flex-pack:justify!important;justify-content:space-between!important}#iab-container .iab-top-container button{font-size:14px!important;font-weight:700!important;color:rgba(0,0,0,.65)!important;display:inline-block!important;padding:8px 16px!important;background-color:rgba(0,0,0,.07)!important;border-radius:6px!important;text-decoration:none!important;background-size:21px!important;background-position:center left 10px!important;background-repeat:no-repeat!important;cursor:pointer!important}#iab-container .iab-top-container button:before{content:attr(data-str-desktop)}@media (max-width:799px){#iab-container .iab-top-container button:before{content:attr(data-str-mobile)}}#iab-container .iab-top-container button:hover{opacity:.8!important}#iab-container .iab-top-container button.cp-button{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%23535353'%3E%3Cpath d='M3 2h5c1.773 0 5 2.634 5 5v7H3V2z'/%3E%3Cpath d='M13 7H8V2h0'/%3E%3C/g%3E%3C/svg%3E")!important;padding-left:40px!important}#iab-container .iab-top-container button.back-button{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg fill='none' fill-rule='evenodd' stroke='%23535353' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6.72 12.243L2.477 8h0L6.72 3.757M3 8h10.548'/%3E%3C/g%3E%3C/svg%3E")!important;padding-left:40px!important}#iab-container .iab-top-container button.stroked-button{background-color:transparent!important;border:1px solid rgba(0,0,0,.25)!important}#iab-container .iab-top-container button.stroked-button:hover{background-color:transparent!important;border-color:rgba(0,0,0,.45)!important}#purposes-container{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-orient:vertical!important;-webkit-box-direction:normal!important;-ms-flex-direction:column!important;flex-direction:column!important;line-height:1.5!important}#purposes-container a{color:rgba(0,0,0,.7)!important;text-decoration:underline!important}#purposes-container a.trigger-link{font-weight:700!important;background-color:#eaeaea!important;padding:8px 16px!important;color:rgba(0,0,0,.75)!important;border-radius:6px!important;display:inline-block!important;text-decoration:none!important;white-space:nowrap!important}#purposes-container button{position:relative!important}#purposes-container .purposes-btn{font-size:14px!important;font-weight:700!important;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center!important;-ms-flex-pack:center!important;justify-content:center!important;-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important;padding:8px 16px!important;background-color:rgba(0,0,0,.07)!important;border-radius:6px!important;text-decoration:none!important;background-size:21px!important;background-position:center left 10px!important;background-repeat:no-repeat!important;cursor:pointer!important}#purposes-container .purposes-btn:hover{opacity:.8!important}#purposes-container .purposes-btn svg{margin-right:4px!important;width:20px!important;height:20px!important}#purposes-container .purposes-btn-tcf{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill='none' fill-rule='evenodd' stroke='%23535353' d='M9.803 2.5v.77h0c.499.199.958.478 1.363.822l.642-.364a.5.5 0 0 1 .686.197l1.273 2.35a.5.5 0 0 1-.193.673l-.659.373h0a5.244 5.244 0 0 1 0 1.358l.659.373a.5.5 0 0 1 .193.673l-1.273 2.35a.5.5 0 0 1-.686.197l-.642-.364h0a4.932 4.932 0 0 1-1.362.823v.769a.5.5 0 0 1-.5.5H6.696a.5.5 0 0 1-.5-.5l-.001-.77h0a4.932 4.932 0 0 1-1.362-.822l-.642.364a.5.5 0 0 1-.686-.197l-1.273-2.35a.5.5 0 0 1 .193-.673l.659-.373h0a5.244 5.244 0 0 1 0-1.359l-.658-.372a.5.5 0 0 1-.193-.674l1.272-2.349a.5.5 0 0 1 .686-.197l.642.364h0a4.932 4.932 0 0 1 1.362-.823V2.5a.5.5 0 0 1 .5-.5h2.607a.5.5 0 0 1 .5.5zM8 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4z'/%3E%3C/svg%3E")!important;padding-left:40px!important}#purposes-container .purposes-btn-primary{background-color:#0073ce!important;color:#fff!important}#purposes-container .purposes-btn-stroked{background-color:transparent!important;border:1px solid rgba(0,0,0,.25)!important}#purposes-container .purposes-btn-stroked:hover{background-color:transparent!important;border-color:rgba(0,0,0,.45)!important}@media (max-width:799px){#purposes-container .purposes-btn.purposes-desktop{display:none!important}}@media (min-width:800px){#purposes-container .purposes-btn.purposes-mobile{display:none!important}}#purposes-container .purposes-top{padding:24px!important;position:relative!important;z-index:2!important;display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-pack:justify!important;-ms-flex-pack:justify!important;justify-content:space-between!important;-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important}@media (max-width:799px){#purposes-container .purposes-top{padding:16px!important}}#purposes-container .purposes-content{-webkit-box-flex:1!important;-ms-flex:1!important;flex:1!important;overflow-y:scroll!important}#purposes-container .purposes-header{padding:24px!important;-ms-flex-negative:0!important;flex-shrink:0!important}@media (max-width:799px){#purposes-container .purposes-header{padding:16px 16px 32px!important}}#purposes-container .purposes-header-title{font-weight:700!important;font-size:48px!important;margin-bottom:8px!important}@media (max-width:799px){#purposes-container .purposes-header-title{font-size:24px!important}}#purposes-container .purposes-header-text{font-size:15px!important;font-weight:300!important}#purposes-container .purposes-buttons{position:sticky!important;position:-webkit-sticky!important;top:0!important;background-color:#fff!important;-webkit-box-shadow:0 1px rgba(0,0,0,.07)!important;box-shadow:0 1px rgba(0,0,0,.07)!important;z-index:3!important;padding:24px 16px!important;display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-pack:end!important;-ms-flex-pack:end!important;justify-content:flex-end!important;-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important}@media (max-width:799px){#purposes-container .purposes-buttons{padding:16px 12px!important}}@media (max-width:799px){#purposes-container .purposes-buttons{-webkit-box-pack:center!important;-ms-flex-pack:center!important;justify-content:center!important}#purposes-container .purposes-buttons>div{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-flex:1!important;-ms-flex:1!important;flex:1!important}#purposes-container .purposes-buttons>div button{-webkit-box-flex:1!important;-ms-flex:1!important;flex:1!important}}#purposes-container .purposes-buttons button{margin:0 8px!important;border-radius:32px!important;-webkit-box-shadow:0 4px 8px -6px rgba(0,0,0,.2)!important;box-shadow:0 4px 8px -6px rgba(0,0,0,.2)!important;padding:8px 20px!important;background-color:#ededed!important;font-size:14px!important;font-weight:700!important;cursor:pointer!important;text-align:center!important;color:#3c3c3c!important;background-repeat:no-repeat!important;background-position:center left 16px!important;padding-left:38px!important;white-space:nowrap!important;overflow:hidden!important;-o-text-overflow:ellipsis!important;text-overflow:ellipsis!important;display:block!important}#purposes-container .purposes-buttons button:before{content:'';background-color:#fff;border-radius:32px!important;display:block;position:absolute;top:0;right:0;bottom:0;left:0;-webkit-transform:scale(.001,.001);-ms-transform:scale(.001,.001);transform:scale(.001,.001)}#purposes-container .purposes-buttons button:focus{outline:0;color:#fff}#purposes-container .purposes-buttons button:focus:before{-webkit-animation:button_clicked .8s ease-out;animation:button_clicked .8s ease-out}#purposes-container .purposes-buttons button.purposes-btn-accept{background-color:#1cc691!important;color:#06281f!important;background-image:url("data:image/svg+xml,%3C%3Fxml version='1.0'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' enable-background='new 0 0 515.556 515.556' height='512px' viewBox='0 0 515.556 515.556' width='512px' class=''%3E%3Cg%3E%3Cpath d='m0 274.226 176.549 176.886 339.007-338.672-48.67-47.997-290.337 290-128.553-128.552z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%2306281F'/%3E%3C/g%3E%3C/svg%3E%0A")!important;background-size:16px!important}#purposes-container .purposes-buttons button.purposes-btn-reject{background-image:url("data:image/svg+xml,%3C%3Fxml version='1.0'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' enable-background='new 0 0 386.667 386.667' height='512px' viewBox='0 0 386.667 386.667' width='512px' class=''%3E%3Cg%3E%3Cpath d='m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%233c3c3c'/%3E%3C/g%3E%3C/svg%3E%0A")!important;background-size:14px!important}@media (max-width:799px){#purposes-container .purposes-buttons button{padding:8px 10px!important;padding-left:32px!important;background-position:center left 12px!important;margin:0 4px!important}}#purposes-container .purposes-body:after{content:"";display:block;height:128px!important}#purposes-container .purposes-items{border-radius:4px!important;background-color:#fff!important}#purposes-container .purposes-badge{display:inline-block!important;padding:2px 16px!important;border-radius:32px!important;font-size:10px!important;font-weight:700!important;text-align:center!important;margin:6px 0!important}@media (max-width:799px){#purposes-container .purposes-badge{margin:6px 0!important}}#purposes-container .purposes-badge-primary{color:#25a247!important;text-align:left!important;padding:0!important;display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important}#purposes-container .purposes-badge-primary:before{content:"";width:24px!important;height:24px!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='16' viewBox='0 0 14 16'%3E%3Cpath fill='%2325a247' fill-rule='evenodd' d='M6.592 0L0 2.783v6.611C0 12.502 6.222 15.902 6.588 16c.366-.098 6.588-3.735 6.588-6.258V2.783L6.592 0z'/%3E%3C/svg%3E")!important;background-repeat:no-repeat!important;background-position:center!important;background-size:12px 12px!important;display:inline-block!important;background-color:#47c51e21!important;vertical-align:middle!important;border-radius:32px!important;margin-right:6px!important;border-top-left-radius:8px!important;-ms-flex-negative:0;flex-shrink:0}#purposes-container .purposes-first{-webkit-box-shadow:0 1px 0 rgba(0,0,0,.1),inset 0 4px 0 rgba(0,0,0,.04),0 4px 4px rgba(0,0,0,.05)!important;box-shadow:0 1px 0 rgba(0,0,0,.1),inset 0 4px 0 rgba(0,0,0,.04),0 4px 4px rgba(0,0,0,.05)!important;position:sticky!important;position:-webkit-sticky!important;top:0!important;background-color:#f8f8f8!important;z-index:2!important;padding:16px 24px!important;display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-pack:justify!important;-ms-flex-pack:justify!important;justify-content:space-between!important;-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important;display:none!important}@media (max-width:799px){#purposes-container .purposes-first{padding:16px 16px!important}}#purposes-container .purposes-first>:first-of-type{text-transform:uppercase!important;text-align:right!important;font-weight:700!important;font-size:12px!important;letter-spacing:1.25px!important;color:rgba(0,0,0,.75)!important;-webkit-box-flex:1;-ms-flex:1;flex:1}@media (max-width:799px){#purposes-container .purposes-first>:first-of-type{font-size:10px!important}}#purposes-container .purposes-checkbox{-ms-flex-negative:0!important;flex-shrink:0!important;display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important;margin-left:24px!important}#purposes-container .purposes-checkbox input{-moz-appearance:none!important;appearance:none!important;-webkit-appearance:none!important;padding:0!important;border:0!important;margin:0!important}#purposes-container .purposes-checkbox input::-ms-check{visibility:hidden}#purposes-container .purposes-checkbox input.style1{width:64px!important;height:32px!important;border-radius:32px!important;-webkit-transition:background-position .4s ease,background-color .4s ease!important;-o-transition:background-position .4s ease,background-color .4s ease!important;transition:background-position .4s ease,background-color .4s ease!important;background-color:#ccc!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cpath fill='%23FFF' fill-rule='evenodd' d='M9 0a9 9 0 1 1 0 18A9 9 0 0 1 9 0zM5.729 5.033a.5.5 0 0 0-.638.058l-.058.07a.5.5 0 0 0 .058.637l3.201 3.201-3.201 3.203a.5.5 0 0 0 .707.707l3.201-3.203 3.203 3.203.07.058a.5.5 0 0 0 .637-.058l.058-.07a.5.5 0 0 0-.058-.637L9.706 8.999l3.203-3.201a.5.5 0 0 0-.707-.707L8.999 8.292 5.798 5.091z'/%3E%3C/svg%3E")!important;background-repeat:no-repeat!important;background-position:top 4px left 4px!important;background-size:24px 24px!important}#purposes-container .purposes-checkbox input.style1:checked{background-color:#1cc691!important;background-position:top 4px left 36px!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cpath fill='%23FFF' fill-rule='evenodd' d='M9 0a9 9 0 1 1 0 18A9 9 0 0 1 9 0zm4.646 5.646l-6.198 6.2-3.1-3a.5.5 0 1 0-.696.718l3.454 3.342a.5.5 0 0 0 .701-.006l6.547-6.546a.5.5 0 1 0-.708-.708z'/%3E%3C/svg%3E")!important}#purposes-container .purposes-checkbox input.style1:checked.sm{background-position:top 3px left 27px!important}#purposes-container .purposes-checkbox input.style1:checked.half{background-color:#ffd24d!important;background-position:top 4px left 20px!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cpath fill='%23FFF' fill-rule='evenodd' d='M9 0a9 9 0 1 1 0 18A9 9 0 0 1 9 0zm4 8.5H5a.5.5 0 0 0 0 1h8a.5.5 0 0 0 0-1z'/%3E%3C/svg%3E")!important}#purposes-container .purposes-checkbox input.style1:checked.half.sm{background-position:top 3px left 15px!important}#purposes-container .purposes-checkbox input.style1.sm{width:48px!important;height:24px!important;border-radius:24px!important;background-size:18px 18px!important;background-position:top 3px left 3px!important}#purposes-container .purposes-checkbox input:focus{outline:0!important}#purposes-container .purposes-checkbox input::-ms-check{visibility:hidden!important}#purposes-container .purposes-checkbox input:not([disabled]){cursor:pointer!important}#purposes-container .purposes-checkbox input[disabled]{opacity:.35}#purposes-container .purposes-item{position:relative!important;display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-orient:vertical!important;-webkit-box-direction:normal!important;-ms-flex-direction:column!important;flex-direction:column!important;margin:0 24px!important}@media (max-width:799px){#purposes-container .purposes-item{margin:0 16px!important}}#purposes-container .purposes-item:not(:last-of-type){border-bottom:1px solid rgba(0,0,0,.075)!important}#purposes-container .purposes-item-shown .purposes-item-body{max-height:1000px!important;padding:0 0 24px!important}@media (max-width:799px){#purposes-container .purposes-item-shown .purposes-item-body{padding:0 0 16px!important}}#purposes-container .purposes-item-shown .purposes-item-title-btn:after{-webkit-transform:rotate(180deg)!important;-ms-transform:rotate(180deg)!important;transform:rotate(180deg)!important}#purposes-container .purposes-item-shown .purposes-item-title-btn:before{content:attr(data-str-on)}#purposes-container .purposes-item-header{background:-webkit-gradient(linear,left bottom,left top,from(rgba(255,255,255,0)),color-stop(15%,#fff))!important;background:-o-linear-gradient(bottom,rgba(255,255,255,0) 0,#fff 15%)!important;background:linear-gradient(0deg,rgba(255,255,255,0) 0,#fff 15%)!important;position:sticky!important;position:-webkit-sticky!important;top:58px!important;z-index:1!important;display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;padding:24px 0!important}@media (max-width:799px){#purposes-container .purposes-item-header{top:52px!important}}#purposes-container .purposes-item-title{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-flex:1!important;-ms-flex:1!important;flex:1!important;-webkit-box-pack:justify!important;-ms-flex-pack:justify!important;justify-content:space-between!important}#purposes-container .purposes-item-title>div:first-of-type{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important}@media (min-width:800px){#purposes-container .purposes-item-title>div:first-of-type{-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important}}@media (max-width:799px){#purposes-container .purposes-item-title>div:first-of-type{-webkit-box-orient:vertical!important;-webkit-box-direction:normal!important;-ms-flex-direction:column!important;flex-direction:column!important}}@media (max-width:799px){#purposes-container .purposes-item-title{-webkit-box-orient:vertical!important;-webkit-box-direction:normal!important;-ms-flex-direction:column!important;flex-direction:column!important}}#purposes-container .purposes-item-title label{font-weight:700!important;font-size:16px!important;-webkit-box-flex:1;-ms-flex:1;flex:1}@media (max-width:799px){#purposes-container .purposes-item-title label{font-size:14px!important}}#purposes-container .purposes-item-title-btn{-webkit-appearance:none!important;-moz-appearance:none!important;appearance:none!important;font-size:12px!important;color:rgba(0,0,0,.75)!important;font-weight:300!important;display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important;cursor:pointer!important}#purposes-container .purposes-item-title-btn:after{content:"";width:10px!important;height:10px!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='5' viewBox='0 0 10 5'%3E%3Cpath fill='none' fill-rule='evenodd' stroke='%23979797' stroke-linecap='round' stroke-linejoin='round' d='M9.243 0L5 4.243h0L.757 0'/%3E%3C/svg%3E")!important;opacity:.5!important;background-size:10px 10px!important;background-repeat:no-repeat!important;display:inline-block!important;margin:8px 6px!important}#purposes-container .purposes-item-title-btn:before{content:attr(data-str-off)}#purposes-container .purposes-item-body{max-height:0!important;overflow:hidden!important;-webkit-transition:max-height .4s ease,padding .4s ease!important;-o-transition:max-height .4s ease,padding .4s ease!important;transition:max-height .4s ease,padding .4s ease!important;font-size:14px!important;font-weight:300!important;color:rgba(0,0,0,.75)!important}@media (max-width:799px){#purposes-container .purposes-item-body{font-size:12px!important}}#purposes-container .purposes-item-body p:not(:last-of-type){margin-bottom:8px!important}#purposes-container .purposes-sub-container{color:#5f5f5f!important}#purposes-container .purposes-sub-container:not(:last-of-type){padding-bottom:32px!important}#purposes-container .purposes-sub-container>div:first-of-type{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:8px!important}#purposes-container .purposes-sub-container>div:first-of-type>div:first-of-type{-webkit-box-flex:1;-ms-flex:1;flex:1}#purposes-container .purposes-sub-container label{font-weight:700!important}#purposes-container .purposes-sub-container p:not(:last-of-type){margin-bottom:16px!important}</style></head>
+<body class="header-arduino" style=""><div style="display: none;"><svg xmlns="http://www.w3.org/2000/svg" data-inject-url="https://cdn.arduino.cc/header-footer/prod/assets/sprites.svg" style="display: none;">
+  <symbol id="footerLang-icon" viewBox="0 0 14 14">
+    <path d="M13.813 6.733a6.422 6.422 0 00-.286-1.669 6.563 6.563 0 00-2.56-3.46.267.267 0 00-.06-.037A6.43 6.43 0 007.783.48 4.49 4.49 0 007.25.438 6.563 6.563 0 1013.813 7a2.533 2.533 0 000-.268zM3.969 11.57a5.625 5.625 0 01-2.096-6.23l.807.577L3.969 8.07v3.501zm6.675-5.976a.469.469 0 00-.324.037l-.937.469a.469.469 0 00-.235.567l.47 1.406a.469.469 0 00.294.296l1.144.38.366 2.001a5.597 5.597 0 01-4.172 1.875 5.48 5.48 0 01-2.142-.427l2.076-3.557a.469.469 0 00-.07-.568l-.469-.468a.469.469 0 00-.332-.136H4.728l-.342-.68a.127.127 0 00-.028-.047l-.455-.68h1.003a.469.469 0 00.469-.468v-.746l.802-.796a.469.469 0 00.056-.591l-.9-1.355-.117-.351a5.56 5.56 0 012.034-.38v.469a.469.469 0 00.938 0v-.385a5.466 5.466 0 011.959.722L9.71 3.72l-.066.225-.384.38a.469.469 0 00.152.768.469.469 0 00.514-.103l.262-.262.469.15 2.044.68c.055.193.097.39.126.59l-2.184-.553z" fill="currentColor"></path>
+  </symbol>
+  <symbol id="footerTriangle-icon" viewBox="0 0 9 6">
+    <path d="M.332 4.332l3.2-3.2a.8.8 0 011.136 0l3.2 3.2a.8.8 0 01.168.872.8.8 0 01-.736.496H.9a.8.8 0 01-.736-.496.8.8 0 01.168-.872z" fill="currentColor"></path>
+  </symbol>
+  <symbol id="headerIcon-menu-triangle" viewBox="0 0 11 7">
+    <path d="M10.21 2.21l-4 4a1 1 0 01-1.42 0l-4-4a1 1 0 01-.21-1.09A1 1 0 011.5.5h8a1 1 0 01.92.62 1 1 0 01-.21 1.09z" fill="currentColor"></path>
+  </symbol>
+  <symbol id="headerIcon-extend-menu" viewBox="0 0 7 12">
+    <path d="M1.5 11.25a.75.75 0 01-.533-1.283L4.942 6 .967 2.032A.753.753 0 112.032.967l4.5 4.5a.75.75 0 010 1.065l-4.5 4.5a.75.75 0 01-.532.218z" fill="currentColor"></path>
+  </symbol>
+  <symbol id="headerIcon-extend-next" viewBox="0 0 10 9">
+    <path d="M8.891 4.766L5.516 8.141a.375.375 0 01-.614-.122.375.375 0 01.082-.41L7.72 4.875H.375a.375.375 0 010-.75h7.346L4.984 1.391A.377.377 0 015.516.86l3.375 3.375a.375.375 0 010 .532z" fill="currentColor"></path>
+  </symbol>
+</svg></div>
+	<div id="header" data-ref="0.7512881998815171" class="ino-header-base"><header id="ino-header-new">
+  <nav class="arduino-nav teal">
+    <!-- First level of header -->
+    <div class="first-level">
+      <div class="first-level-left app-menu-apps" id="main-menu">
+        <!-- Component MenuAppsCmp -->
+      <div class="app-menu-apps-link"><a href="https://www.arduino.cc/pro" target="_blank" rel="noopener noreferrer"><span class="link-full">Professional</span><span class="link-short">Pro</span></a></div><div class="app-menu-apps-link"><a href="https://www.arduino.cc/edu" target="_blank" rel="noopener noreferrer"><span class="link-full">Education</span><span class="link-short">Edu</span></a></div><div class="app-menu-apps-link"><a href="https://store.arduino.cc/" target="_blank" rel="noopener noreferrer"><span>Store</span></a></div></div>
+
+      <!-- Right part of control -->
+      <div class="first-level-right">
+        <!-- Search bar -->
+        <div class="app-controls search-control app-desktop-search-control"><form class="search-form ino-suggestion" role="search" method="GET" action="https://www.arduino.cc/search">
+  <div class="search-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" id="search" viewBox="0 0 20 20" data-inject-url="https://cdn.arduino.cc/header-footer/prod/assets/headerIcon-search.svg">
+  <path d="M19.5325 18.4675L14.2825 13.2175C15.4994 11.7274 16.0972 9.82667 15.9522 7.90828C15.8072 5.9899 14.9306 4.20059 13.5035 2.91032C12.0765 1.62005 10.2082 0.927502 8.28495 0.975872C6.3617 1.02424 4.53058 1.80983 3.17021 3.1702C1.80984 4.53057 1.02425 6.36169 0.975884 8.28493C0.927514 10.2082 1.62006 12.0765 2.91033 13.5035C4.2006 14.9305 5.98991 15.8072 7.90829 15.9522C9.82668 16.0972 11.7274 15.4994 13.2175 14.2825L18.4675 19.5325C18.5372 19.6028 18.6202 19.6586 18.7116 19.6967C18.803 19.7347 18.901 19.7543 19 19.7543C19.099 19.7543 19.197 19.7347 19.2884 19.6967C19.3798 19.6586 19.4628 19.6028 19.5325 19.5325C19.6028 19.4628 19.6586 19.3798 19.6967 19.2884C19.7348 19.197 19.7544 19.099 19.7544 19C19.7544 18.901 19.7348 18.803 19.6967 18.7116C19.6586 18.6202 19.6028 18.5372 19.5325 18.4675ZM8.50001 14.5C7.31332 14.5 6.15329 14.1481 5.16659 13.4888C4.1799 12.8295 3.41086 11.8925 2.95674 10.7961C2.50261 9.69974 2.38379 8.49334 2.6153 7.32946C2.84681 6.16557 3.41826 5.09647 4.25737 4.25736C5.09649 3.41824 6.16558 2.8468 7.32947 2.61529C8.49336 2.38378 9.69976 2.5026 10.7961 2.95672C11.8925 3.41085 12.8295 4.17988 13.4888 5.16658C14.1481 6.15327 14.5 7.31331 14.5 8.5C14.5 10.0913 13.8679 11.6174 12.7427 12.7426C11.6174 13.8679 10.0913 14.5 8.50001 14.5Z" fill="currentColor"></path>
+</svg>
+  </div>
+  <input type="hidden" name="tab" value="" class="search-tab">
+  <input type="text" placeholder="Search on Arduino.cc" value="" name="q" title="" class="search-typing" autocomplete="off">
+<div class="ino-suggestion__box"></div></form></div>
+
+        <!-- Store container -->
+        <div class="app-controls store-controls hide">
+          <!-- Store buttons -->
+        </div>
+
+        <!-- Application list -->
+        <div class="app-controls application-list app-applications-container style-arduino"><div class="app-applications popup-dropdown">
+  <a aria-label="Applications" id="application-list-control" href="https://playground.arduino.cc/Main/FlexiTimer2/#" role="button">
+    <div class="app-applications-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" id="app-list" viewBox="0 0 18 18" data-inject-url="https://cdn.arduino.cc/header-footer/prod/assets/headerIcon-app-list.svg">
+  <path d="M9 10.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15.75 10.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15.75 3.75a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM9 3.75a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM2.25 3.75a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM2.25 10.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM9 17.25a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15.75 17.25a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM2.25 17.25a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" fill="currentColor"></path>
+</svg>
+    </div>
+  </a>
+  <div class="popup-container">
+    <div class="popup-container__box" id="app-apps-container-box"><div class="app-applications__row"><div class="app-applications__col"><a id="web-editor" class="app-application" href="https://create.arduino.cc/editor" target="blank" rel="noopener noreferrer">
+        <div class="app-application__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 36" id="app-web-editor" data-inject-url="https://cdn.arduino.cc/header-footer/prod/assets/headerApp-web-editor.svg">
+  <path d="M0.5 6.5H45.5V32.5C45.5 34.1569 44.1569 35.5 42.5 35.5H3.5C1.84315 35.5 0.5 34.1569 0.5 32.5V6.5Z" fill="#171E21"></path>
+  <path d="M0.5 3.5C0.5 1.84315 1.84315 0.5 3.5 0.5H42.5C44.1569 0.5 45.5 1.84315 45.5 3.5V6.5H0.5V3.5Z" fill="#DAE3E3"></path>
+  <rect x="5.5" y="10.5" width="6" height="2" rx="1" fill="#98FFC7"></rect>
+  <rect x="19.5" y="16.5" width="6" height="2" rx="1" fill="#FFE793"></rect>
+  <rect x="13.5" y="22.5" width="6" height="2" rx="1" fill="#95A5A6"></rect>
+  <rect x="13.5" y="10.5" width="4" height="2" rx="1" fill="#98FFC7"></rect>
+  <rect x="21.5" y="22.5" width="4" height="2" rx="1" fill="#95A5A6"></rect>
+  <rect x="13.5" y="16.5" width="4" height="2" rx="1" fill="#FFA572"></rect>
+  <rect x="5.5" y="28.5" width="4" height="2" rx="1" fill="#fff"></rect>
+  <rect x="27.5" y="16.5" width="4" height="2" rx="1" fill="#fff"></rect>
+</svg>
+        </div>
+        <div class="app-application__name">Web Editor</div>
+      </a></div><div class="app-applications__col"><a id="iot-cloud" class="app-application" href="https://create.arduino.cc/iot" target="blank" rel="noopener noreferrer">
+        <div class="app-application__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" id="app-iot-cloud" viewBox="0 0 46 36" data-inject-url="https://cdn.arduino.cc/header-footer/prod/assets/headerApp-iot-cloud.svg">
+  <rect x=".5" y=".5" width="45" height="35" rx="3" fill="#DAE3E3"></rect>
+  <rect x="3.5" y="3.5" width="18" height="29" rx="1" fill="#fff"></rect>
+  <rect x="24.5" y="3.5" width="18" height="13" rx="1" fill="#fff"></rect>
+  <rect x="24.5" y="19.5" width="18" height="13" rx="1" fill="#fff"></rect>
+  <rect x="27.5" y="6.5" width="12" height="7" rx="3.5" fill="#95A5A6"></rect>
+  <rect x="27.5" y="22.5" width="12" height="7" rx="3.5" fill="#0CA1A6"></rect>
+  <circle cx="31" cy="10" r="2.5" fill="#fff"></circle>
+  <circle cx="36" cy="26" r="2.5" fill="#fff"></circle>
+  <path stroke="#95A5A6" stroke-width="3" stroke-linecap="round" d="M13 8v20"></path>
+  <path stroke="#0CA1A6" stroke-width="3" stroke-linecap="round" d="M13 17v11"></path>
+  <circle cx="13" cy="18" r="3" fill="#fff" stroke="#95A5A6"></circle>
+</svg>
+        </div>
+        <div class="app-application__name">IoT Cloud</div>
+      </a></div></div><div class="app-applications__row"><div class="app-applications__col"><a id="device-manager" class="app-application" href="https://create.arduino.cc/devices" target="blank" rel="noopener noreferrer">
+        <div class="app-application__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" id="app-device-manager" viewBox="0 0 48 36" data-inject-url="https://cdn.arduino.cc/header-footer/prod/assets/headerApp-device-manager.svg">
+  <rect x="2.5" y=".5" width="45" height="35" rx="3" fill="#0CA1A6"></rect>
+  <circle cx="5.5" cy="3.5" r="2" fill="#fff"></circle>
+  <circle cx="44.5" cy="3.5" r="2" fill="#fff"></circle>
+  <circle cx="5.5" cy="32.5" r="2" fill="#fff"></circle>
+  <circle cx="44.5" cy="32.5" r="2" fill="#fff"></circle>
+  <rect x=".5" y="12.5" width="7" height="11" rx="1" fill="#DAE3E3"></rect>
+  <rect x="30.5" y="11.5" width="13" height="13" rx="1" fill="#DAE3E3"></rect>
+  <rect x="16.5" y="1.5" width="23" height="4" rx="1" fill="#4E5B61"></rect>
+  <rect x="16.5" y="30.5" width="23" height="4" rx="1" fill="#4E5B61"></rect>
+</svg>
+        </div>
+        <div class="app-application__name">Manager for Linux</div>
+      </a></div><div class="app-applications__col"><a id="digital-store" class="app-application" href="https://store.arduino.cc/digital/" target="blank" rel="noopener noreferrer">
+        <div class="app-application__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" id="app-digital-store" viewBox="0 0 52 36" data-inject-url="https://cdn.arduino.cc/header-footer/prod/assets/headerApp-digital-store.svg">
+  <path d="M3.5 3.5a3 3 0 013-3h39a3 3 0 013 3v32h-45v-32z" fill="#DAE3E3"></path>
+  <path fill="#fff" d="M24.5 17.5h19v12h-19z"></path>
+  <rect x="3.5" y="3.5" width="9" height="9" rx="4.5" fill="#0CA1A6"></rect>
+  <path d="M3.5 3.5a3 3 0 013-3h6v8h-9v-5zM39.5.5h6a3 3 0 013 3v5h-9v-8z" fill="#0CA1A6"></path>
+  <rect x="39.5" y="3.5" width="9" height="9" rx="4.5" fill="#0CA1A6"></rect>
+  <rect x="12.5" y="3.5" width="9" height="9" rx="4.5" fill="#fff"></rect>
+  <path fill="#fff" d="M12.5.5h9v8h-9z"></path>
+  <rect x="21.5" y="3.5" width="9" height="9" rx="4.5" fill="#0CA1A6"></rect>
+  <path fill="#0CA1A6" d="M21.5.5h9v8h-9z"></path>
+  <rect x="30.5" y="3.5" width="9" height="9" rx="4.5" fill="#fff"></rect>
+  <path fill="#fff" d="M30.5.5h9v8h-9z"></path>
+  <path d="M8.5 18.5a1 1 0 011-1h10a1 1 0 011 1v17h-12v-17z" fill="#BCAC99"></path>
+  <circle cx="15.5" cy="25.5" r="2" fill="#fff"></circle>
+  <rect x=".5" y="33.5" width="51" height="2" rx="1" fill="#C9D2D2"></rect>
+</svg>
+        </div>
+        <div class="app-application__name">Digital Store</div>
+      </a></div></div></div>
+  </div>
+</div></div>
+
+        <!-- Auth/Profile container -->
+        <div class="app-controls profile-desktop-container app-desktop-profile-container style-arduino min-width"><!-- Sign In -->
+<div class="login-button hide">
+  <a href="https://playground.arduino.cc/Main/FlexiTimer2/#">
+    <span>Sign In</span>
+  </a>
+</div>
+
+<!-- Profile view -->
+<div class="profile-dropdown popup-dropdown hide" tabindex="0">
+  <a data-hj-suppress="" class="submenu-toggle profile-avatar" aria-label="user profile">
+    <svg viewBox="0 0 22 22" class="avatar default-avatar">
+      <path d="M11 11.7498H10.88C9.99585 11.7184 9.1594 11.341 8.55072 10.6989C7.94204 10.0569 7.6098 9.20152 7.62553 8.31694C7.64126 7.43237 8.0037 6.58934 8.63483 5.96934C9.26595 5.34934 10.1153 5.00195 11 5.00195C11.8847 5.00195 12.7341 5.34934 13.3652 5.96934C13.9963 6.58934 14.3587 7.43237 14.3745 8.31694C14.3902 9.20152 14.058 10.0569 13.4493 10.6989C12.8406 11.341 12.0042 11.7184 11.12 11.7498H11Z" fill="currentColor"></path>
+      <path d="M17.9752 18.65C17.9857 18.7012 18.0007 18.7514 18.0202 18.8C16.0921 20.535 13.5902 21.495 10.9964 21.495C8.40264 21.495 5.90067 20.535 3.97266 18.8C3.99462 18.7516 4.01219 18.7014 4.02516 18.65C4.38847 17.1001 5.26936 15.7205 6.52245 14.7387C7.77553 13.757 9.3259 13.2318 10.9177 13.25H11.0827C12.6744 13.2318 14.2248 13.757 15.4779 14.7387C16.7309 15.7205 17.6118 17.1001 17.9752 18.65Z" fill="currentColor"></path>
+      <path d="M21.5004 10.9998C21.5108 13.3645 20.7174 15.6626 19.2504 17.5173C18.8356 16.2987 18.1466 15.1916 17.2363 14.2814C16.3261 13.3712 15.219 12.6821 14.0004 12.2673C14.8135 11.6501 15.4123 10.7933 15.7124 9.81765C16.0126 8.842 15.9989 7.79676 15.6733 6.82931C15.3477 5.86186 14.7266 5.02102 13.8977 4.42536C13.0687 3.8297 12.0737 3.50928 11.0529 3.50928C10.0321 3.50928 9.03713 3.8297 8.20818 4.42536C7.37922 5.02102 6.75816 5.86186 6.43256 6.82931C6.10697 7.79676 6.09327 8.842 6.39341 9.81765C6.69354 10.7933 7.29236 11.6501 8.10542 12.2673C6.88682 12.6821 5.77973 13.3712 4.8695 14.2814C3.95927 15.1916 3.2702 16.2987 2.85542 17.5173C1.79166 16.2095 1.05841 14.6648 0.717686 13.0138C0.376957 11.3629 0.438759 9.65409 0.897868 8.03203C1.35698 6.40996 2.19989 4.92228 3.35535 3.69477C4.51081 2.46726 5.94484 1.536 7.5362 0.979724C9.12757 0.423451 10.8295 0.25852 12.498 0.498875C14.1666 0.73923 15.7528 1.3778 17.1224 2.36061C18.4921 3.34341 19.605 4.64156 20.367 6.14528C21.129 7.64901 21.5178 9.31411 21.5004 10.9998Z" fill="currentColor"></path>
+    </svg>      
+    <img class="avatar user-avatar" src="./Arduino Playground - FlexiTimer2_files/global_user_profile.svg" alt="User Profile">
+    <span class="badge">0</span>
+  </a>
+  <div class="popup-container">
+    <div class="popup-container__box">
+      <ul>
+        <li>
+          <a href="https://id.arduino.cc/"><span>Profile</span></a>
+        </li>
+        <li class="forum-messages">
+          <a href="https://forum.arduino.cc/index.php?action=pm"><span>Messages</span></a>
+        </li>
+        <li>
+          <a href="https://store.arduino.cc/digital/subscriptions"><span>My Plans</span></a>
+        </li>
+        <li class="logout">
+          <a role="button" tabindex="0"><span>Sign Out</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div></div>
+      </div>
+
+    </div>
+
+    <!-- Second level of header -->
+    <div class="second-level">
+      <!-- Brand logo -->
+      <a class="brand-logo app-brand-logo style-arduino logo-arduino" href="https://playground.arduino.cc/" aria-label="arduino-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 25" fill="none" data-inject-url="https://cdn.arduino.cc/header-footer/prod/assets/headerLogo-arduino.svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M51.25 12.5C51.25 5.60219 45.5773 0 38.6242 0C37.984 0 37.3261 0.0364964 36.6859 0.145985C31.2799 0.930657 27.6522 4.92701 25.625 7.9927C23.5978 4.92701 19.9701 0.930657 14.5641 0.145985C13.9239 0.0547445 13.266 0 12.6258 0C5.65493 0 0 5.60219 0 12.5C0 19.3978 5.67271 25 12.6258 25C13.266 25 13.9239 24.9635 14.5819 24.854C19.9879 24.0511 23.6155 20.0547 25.6428 16.9891C27.67 20.0547 31.2977 24.0511 36.7037 24.854C37.3439 24.9453 38.0018 25 38.6598 25C45.5773 25 51.25 19.3978 51.25 12.5ZM13.9416 20.4744C13.4971 20.5474 13.0525 20.5657 12.6079 20.5657C8.01996 20.5657 4.30336 16.9343 4.30336 12.5C4.30336 8.04744 8.03774 4.4343 12.6257 4.4343C13.0703 4.4343 13.5148 4.4708 13.9594 4.52554C19.0631 5.27372 22.1751 10.4379 23.242 12.5C22.1573 14.5803 19.0275 19.7263 13.9416 20.4744ZM37.2905 4.52554C32.1868 5.27372 29.057 10.4379 28.0079 12.5C29.057 14.562 32.1868 19.7263 37.2905 20.4744C37.735 20.5292 38.1796 20.5657 38.6242 20.5657C43.1944 20.5657 46.9287 16.9525 46.9287 12.5C46.9287 8.06569 43.2121 4.4343 38.6242 4.4343C38.1796 4.4343 37.735 4.4708 37.2905 4.52554ZM9.06449 11.161H16.7004V13.5642H9.06449V11.161ZM42.1479 13.5817H39.5728V16.1077H37.1049V13.5817H34.5298V11.161H37.1049V8.63499H39.5728V11.161H42.1479V13.5817Z" fill="currentColor"></path>
+</svg></a>
+
+      <!-- Main application menu -->
+      <div class="menu-container">
+        <!-- Search bar -->
+        <div class="mobile-search-control app-mobile-search-control"><form class="search-form ino-suggestion" role="search" method="GET" action="https://www.arduino.cc/search">
+  <div class="search-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" id="search" viewBox="0 0 20 20" data-inject-url="https://cdn.arduino.cc/header-footer/prod/assets/headerIcon-search.svg">
+  <path d="M19.5325 18.4675L14.2825 13.2175C15.4994 11.7274 16.0972 9.82667 15.9522 7.90828C15.8072 5.9899 14.9306 4.20059 13.5035 2.91032C12.0765 1.62005 10.2082 0.927502 8.28495 0.975872C6.3617 1.02424 4.53058 1.80983 3.17021 3.1702C1.80984 4.53057 1.02425 6.36169 0.975884 8.28493C0.927514 10.2082 1.62006 12.0765 2.91033 13.5035C4.2006 14.9305 5.98991 15.8072 7.90829 15.9522C9.82668 16.0972 11.7274 15.4994 13.2175 14.2825L18.4675 19.5325C18.5372 19.6028 18.6202 19.6586 18.7116 19.6967C18.803 19.7347 18.901 19.7543 19 19.7543C19.099 19.7543 19.197 19.7347 19.2884 19.6967C19.3798 19.6586 19.4628 19.6028 19.5325 19.5325C19.6028 19.4628 19.6586 19.3798 19.6967 19.2884C19.7348 19.197 19.7544 19.099 19.7544 19C19.7544 18.901 19.7348 18.803 19.6967 18.7116C19.6586 18.6202 19.6028 18.5372 19.5325 18.4675ZM8.50001 14.5C7.31332 14.5 6.15329 14.1481 5.16659 13.4888C4.1799 12.8295 3.41086 11.8925 2.95674 10.7961C2.50261 9.69974 2.38379 8.49334 2.6153 7.32946C2.84681 6.16557 3.41826 5.09647 4.25737 4.25736C5.09649 3.41824 6.16558 2.8468 7.32947 2.61529C8.49336 2.38378 9.69976 2.5026 10.7961 2.95672C11.8925 3.41085 12.8295 4.17988 13.4888 5.16658C14.1481 6.15327 14.5 7.31331 14.5 8.5C14.5 10.0913 13.8679 11.6174 12.7427 12.7426C11.6174 13.8679 10.0913 14.5 8.50001 14.5Z" fill="currentColor"></path>
+</svg>
+  </div>
+  <input type="hidden" name="tab" value="" class="search-tab">
+  <input type="text" placeholder="Search on Arduino.cc" value="" name="q" title="" class="search-typing" autocomplete="off">
+<div class="ino-suggestion__box"></div></form></div>
+
+        <!-- App menu -->
+        <div class="menu-list app-menu-main style-arduino" id="app-menu-list"><div class="app-menu-item" tabindex="0"><a class="app-menu-text main-text" href="https://www.arduino.cc/en/Main/Products" tabindex="-1"><span title="Hardware">Hardware</span></a></div><div class="app-menu-item app-has-sub-menu" tabindex="0"><a class="app-menu-text main-text" role="button" tabindex="-1"><span title="Software">Software</span><div class="app-menu-triangle"><svg>
+        <use xlink:href="/Main/FlexiTimer2/#headerIcon-menu-triangle" href="#headerIcon-menu-triangle"></use>
+      </svg></div></a><div class="app-sub-menu"><a class="app-menu-text sub-menu-text" href="https://www.arduino.cc/en/Main/Create"><span title="Arduino Create">Arduino Create</span></a><a class="app-menu-text sub-menu-text" href="https://www.arduino.cc/en/software"><span title="Downloads">Downloads</span></a></div></div><div class="app-menu-item app-has-sub-menu" tabindex="0"><a class="app-menu-text main-text" role="button" tabindex="-1"><span title="Documentation">Documentation</span><div class="app-menu-triangle"><svg>
+        <use xlink:href="/Main/FlexiTimer2/#headerIcon-menu-triangle" href="#headerIcon-menu-triangle"></use>
+      </svg></div></a><div class="app-sub-menu"><a class="app-menu-text sub-menu-text" href="https://www.arduino.cc/en/Tutorial/HomePage"><span title="Tutorials">Tutorials</span></a><a class="app-menu-text sub-menu-text" href="https://www.arduino.cc/reference/en"><span title="Reference">Reference</span></a><a class="app-menu-text sub-menu-text" href="https://playground.arduino.cc/"><span title="Playground">Playground</span></a></div></div><div class="app-menu-item app-has-sub-menu" tabindex="0"><a class="app-menu-text main-text" role="button" tabindex="-1"><span title="Community">Community</span><div class="app-menu-triangle"><svg>
+        <use xlink:href="/Main/FlexiTimer2/#headerIcon-menu-triangle" href="#headerIcon-menu-triangle"></use>
+      </svg></div></a><div class="app-sub-menu"><a class="app-menu-text sub-menu-text" href="https://forum.arduino.cc/"><span title="Forum">Forum</span></a><a class="app-menu-text sub-menu-text" href="https://discord.gg/jQJFwW7" target="_blank" rel="noopener noreferrer"><span title="Discord">Discord</span></a><a class="app-menu-text sub-menu-text" href="https://create.arduino.cc/projecthub" target="_blank" rel="noopener noreferrer"><span title="Project Hub">Project Hub</span></a><a class="app-menu-text sub-menu-text" href="https://day.arduino.cc/" target="_blank" rel="noopener noreferrer"><span title="Arduino Day">Arduino Day</span></a></div></div><div class="app-menu-item" tabindex="0"><a class="app-menu-text main-text" href="https://blog.arduino.cc/" tabindex="-1"><span title="Blog">Blog</span></a></div><div class="app-menu-item" tabindex="0"><a class="app-menu-text main-text" href="https://www.arduino.cc/en/Guide/Introduction" tabindex="-1"><span title="About">About</span></a></div></div>
+
+        <!-- App buttons -->
+        <div class="menu-buttons app-menu-buttons" id="app-menu-buttons"></div>
+
+        <div class="profile-mobile-container app-mobile-profile-container style-arduino"><!-- Sign In -->
+<div class="login-button hide">
+  <a href="https://playground.arduino.cc/Main/FlexiTimer2/#">
+    <span>Sign In</span>
+  </a>
+</div>
+<!-- User profile -->
+<div class="profile-dropdown hide">
+  <div class="profile-menu">
+    <div class="profile-menu__item">
+      <a href="https://id.arduino.cc/">Profile</a>
+    </div>
+    <div class="profile-menu__item">
+      <a href="https://forum.arduino.cc/index.php?action=pm">Messages</a>
+    </div>
+    <div class="profile-menu__item">
+      <a href="https://store.arduino.cc/digital/subscriptions">My Plans</a>
+    </div>
+  </div>
+  <div class="profile-info">
+    <div class="profile-avatar" aria-label="user profile">
+      <svg viewBox="0 0 22 22" class="avatar default-avatar">
+        <path d="M11 11.7498H10.88C9.99585 11.7184 9.1594 11.341 8.55072 10.6989C7.94204 10.0569 7.6098 9.20152 7.62553 8.31694C7.64126 7.43237 8.0037 6.58934 8.63483 5.96934C9.26595 5.34934 10.1153 5.00195 11 5.00195C11.8847 5.00195 12.7341 5.34934 13.3652 5.96934C13.9963 6.58934 14.3587 7.43237 14.3745 8.31694C14.3902 9.20152 14.058 10.0569 13.4493 10.6989C12.8406 11.341 12.0042 11.7184 11.12 11.7498H11Z" fill="currentColor"></path>
+        <path d="M17.9752 18.65C17.9857 18.7012 18.0007 18.7514 18.0202 18.8C16.0921 20.535 13.5902 21.495 10.9964 21.495C8.40264 21.495 5.90067 20.535 3.97266 18.8C3.99462 18.7516 4.01219 18.7014 4.02516 18.65C4.38847 17.1001 5.26936 15.7205 6.52245 14.7387C7.77553 13.757 9.3259 13.2318 10.9177 13.25H11.0827C12.6744 13.2318 14.2248 13.757 15.4779 14.7387C16.7309 15.7205 17.6118 17.1001 17.9752 18.65Z" fill="currentColor"></path>
+        <path d="M21.5004 10.9998C21.5108 13.3645 20.7174 15.6626 19.2504 17.5173C18.8356 16.2987 18.1466 15.1916 17.2363 14.2814C16.3261 13.3712 15.219 12.6821 14.0004 12.2673C14.8135 11.6501 15.4123 10.7933 15.7124 9.81765C16.0126 8.842 15.9989 7.79676 15.6733 6.82931C15.3477 5.86186 14.7266 5.02102 13.8977 4.42536C13.0687 3.8297 12.0737 3.50928 11.0529 3.50928C10.0321 3.50928 9.03713 3.8297 8.20818 4.42536C7.37922 5.02102 6.75816 5.86186 6.43256 6.82931C6.10697 7.79676 6.09327 8.842 6.39341 9.81765C6.69354 10.7933 7.29236 11.6501 8.10542 12.2673C6.88682 12.6821 5.77973 13.3712 4.8695 14.2814C3.95927 15.1916 3.2702 16.2987 2.85542 17.5173C1.79166 16.2095 1.05841 14.6648 0.717686 13.0138C0.376957 11.3629 0.438759 9.65409 0.897868 8.03203C1.35698 6.40996 2.19989 4.92228 3.35535 3.69477C4.51081 2.46726 5.94484 1.536 7.5362 0.979724C9.12757 0.423451 10.8295 0.25852 12.498 0.498875C14.1666 0.73923 15.7528 1.3778 17.1224 2.36061C18.4921 3.34341 19.605 4.64156 20.367 6.14528C21.129 7.64901 21.5178 9.31411 21.5004 10.9998Z" fill="currentColor"></path>
+      </svg> 
+      <img class="avatar user-avatar" src="./Arduino Playground - FlexiTimer2_files/global_user_profile.svg" alt="User Profile">
+      <div class="profile-greeting">
+        <!-- Set user greeting here -->
+      </div>
+    </div>
+    <div class="logout">
+      <a role="button" tabindex="0">Sign Out</a>
+    </div>
+  </div>
+</div></div>
+      </div>
+
+      <!-- Burger menu -->
+      <div class="burger-menu">
+        <div class="burger-main-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" id="burger-menu" viewBox="0 0 18 13" data-inject-url="https://cdn.arduino.cc/header-footer/prod/assets/headerIcon-burger-menu.svg">
+  <path d="M17.25 7.25H0.75C0.551088 7.25 0.360322 7.17098 0.21967 7.03033C0.0790178 6.88968 0 6.69891 0 6.5C0 6.30109 0.0790178 6.11032 0.21967 5.96967C0.360322 5.82902 0.551088 5.75 0.75 5.75H17.25C17.4489 5.75 17.6397 5.82902 17.7803 5.96967C17.921 6.11032 18 6.30109 18 6.5C18 6.69891 17.921 6.88968 17.7803 7.03033C17.6397 7.17098 17.4489 7.25 17.25 7.25Z" fill="currentColor"></path>
+  <path d="M17.25 2H0.75C0.551088 2 0.360322 1.92098 0.21967 1.78033C0.0790178 1.63968 0 1.44891 0 1.25C0 1.05109 0.0790178 0.860322 0.21967 0.71967C0.360322 0.579018 0.551088 0.5 0.75 0.5H17.25C17.4489 0.5 17.6397 0.579018 17.7803 0.71967C17.921 0.860322 18 1.05109 18 1.25C18 1.44891 17.921 1.63968 17.7803 1.78033C17.6397 1.92098 17.4489 2 17.25 2Z" fill="currentColor"></path>
+  <path d="M17.25 12.5H0.75C0.551088 12.5 0.360322 12.421 0.21967 12.2803C0.0790178 12.1397 0 11.9489 0 11.75C0 11.5511 0.0790178 11.3603 0.21967 11.2197C0.360322 11.079 0.551088 11 0.75 11H17.25C17.4489 11 17.6397 11.079 17.7803 11.2197C17.921 11.3603 18 11.5511 18 11.75C18 11.9489 17.921 12.1397 17.7803 12.2803C17.6397 12.421 17.4489 12.5 17.25 12.5Z" fill="currentColor"></path>
+</svg>
+        </div>
+        <div class="burger-close-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" id="burger-close" viewBox="0 0 20 19" data-inject-url="https://cdn.arduino.cc/header-footer/prod/assets/headerIcon-burger-close.svg">
+  <path d="M18.7099 16.7899C18.8037 16.8829 18.8781 16.9935 18.9288 17.1154C18.9796 17.2372 19.0057 17.3679 19.0057 17.4999C19.0057 17.632 18.9796 17.7627 18.9288 17.8845C18.8781 18.0064 18.8037 18.117 18.7099 18.2099C18.617 18.3037 18.5064 18.3781 18.3845 18.4288C18.2627 18.4796 18.132 18.5057 17.9999 18.5057C17.8679 18.5057 17.7372 18.4796 17.6154 18.4288C17.4935 18.3781 17.3829 18.3037 17.2899 18.2099L9.99994 10.9199L2.70994 18.2099C2.61698 18.3037 2.50638 18.3781 2.38452 18.4288C2.26266 18.4796 2.13195 18.5057 1.99994 18.5057C1.86793 18.5057 1.73722 18.4796 1.61536 18.4288C1.4935 18.3781 1.3829 18.3037 1.28994 18.2099C1.19621 18.117 1.12182 18.0064 1.07105 17.8845C1.02028 17.7627 0.994141 17.632 0.994141 17.4999C0.994141 17.3679 1.02028 17.2372 1.07105 17.1154C1.12182 16.9935 1.19621 16.8829 1.28994 16.7899L8.57994 9.49994L1.28994 2.20994C1.1967 2.1167 1.12274 2.00601 1.07228 1.88419C1.02182 1.76237 0.995847 1.6318 0.995847 1.49994C0.995847 1.36808 1.02182 1.23751 1.07228 1.11569C1.12274 0.99387 1.1967 0.88318 1.28994 0.789941C1.38318 0.696703 1.49387 0.622742 1.61569 0.572282C1.73751 0.521822 1.86808 0.49585 1.99994 0.49585C2.1318 0.49585 2.26237 0.521822 2.38419 0.572282C2.50601 0.622742 2.6167 0.696703 2.70994 0.789941L9.99994 8.07994L17.2899 0.789941C17.4782 0.601638 17.7336 0.49585 17.9999 0.49585C18.2662 0.49585 18.5216 0.601638 18.7099 0.789941C18.8982 0.978245 19.004 1.23364 19.004 1.49994C19.004 1.76624 18.8982 2.02164 18.7099 2.20994L11.4199 9.49994L18.7099 16.7899Z" fill="currentColor"></path>
+</svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- portal element-->
+    <div id="ino-portal-element"></div>
+  </nav>
+  <div id="consent-modal-container"></div>
+</header>
+<nagbar data-ref="0.3193206901965082"></nagbar>
+<snackbar></snackbar></div>
+	<div id="menuWings" class="fixed"></div>
+	<div id="page">
+        
+        <div style="margin-top: 16px;text-align: center; padding: 16px; background: #fcf6c9; font-size: 18px; line-height: 150%;">
+        Arduino Playground is read-only starting December 31st, 2018. For more info please look at this <a href="https://forum.arduino.cc/index.php?topic=580991.0" target="_blank">Forum Post</a>
+        </div>
+		<br class="clear">
+
+		<!--PageLeftFmt-->
+		<div id="pagenav">
+			<p><em>The <a class="wikilink" href="https://playground.arduino.cc/Main/HomePage/">playground</a> is a publicly-editable wiki about <a class="urllink" href="https://www.arduino.cc/" rel="nofollow">Arduino</a>.</em>
+</p>
+<p class="vspace"></p><p class="sidehead"><a class="wikilink" href="https://playground.arduino.cc/Main/ManualsAndCurriculum/">Manuals and Curriculum</a>
+</p>
+<p class="vspace"></p><p class="sidehead"><a class="urllink" href="https://arduino.stackexchange.com/" rel="nofollow">Arduino StackExchange</a>
+</p>
+<p class="vspace"></p><p class="sidehead"><a class="wikilink" href="https://playground.arduino.cc/Main/ArduinoCoreHardware/">Board Setup and Configuration</a>
+</p>
+<p class="vspace"></p><p class="sidehead"><a class="wikilink" href="https://playground.arduino.cc/Main/DevelopmentTools/">Development Tools</a>
+</p>
+<p class="vspace"></p><p class="sidehead"> <a class="wikilink" href="https://playground.arduino.cc/Main/ArduinoOnOtherAtmelChips/">Arduino on other Chips</a>
+</p>
+<p class="vspace"></p><p class="sidehead"><a class="wikilink" href="https://playground.arduino.cc/Main/InterfacingWithHardware/">Interfacing With Hardware</a>
+</p><ul><li><a class="wikilink" href="https://playground.arduino.cc/Main/InterfacingWithHardware/#Output">Output</a>
+</li><li><a class="wikilink" href="https://playground.arduino.cc/Main/InterfacingWithHardware/#InputTOC">Input</a>
+</li><li><a class="wikilink" href="https://playground.arduino.cc/Main/InterfacingWithHardware/#ui">User Interface</a>
+</li><li><a class="wikilink" href="https://playground.arduino.cc/Main/InterfacingWithHardware/#Storage">Storage</a>
+</li><li><a class="wikilink" href="https://playground.arduino.cc/Main/InterfacingWithHardware/#Communication">Communication</a> 
+</li><li><a class="wikilink" href="https://playground.arduino.cc/Main/IntWithHW-PwrSup/">Power supplies</a> 
+</li><li><a class="wikilink" href="https://playground.arduino.cc/Main/InterfacingWithHardware/#General">General</a> 
+</li></ul><p class="vspace"></p><p class="sidehead"><a class="wikilink" href="https://playground.arduino.cc/Main/InterfacingWithSoftware/">Interfacing with Software</a>
+</p>
+<p class="vspace"></p><p class="sidehead"><a class="wikilink" href="https://playground.arduino.cc/Main/GeneralCodeLibrary/">User Code Library</a>
+</p><ul><li><a class="wikilink" href="https://playground.arduino.cc/Main/SketchList/">Snippets and Sketches</a>
+</li><li><a class="wikilink" href="https://playground.arduino.cc/Main/LibraryList/">Libraries</a>
+</li><li><a class="wikilink" href="https://playground.arduino.cc/Main/TutorialList/">Tutorials</a>
+</li></ul><p class="vspace"></p><p class="sidehead"><a class="urllink" href="https://github.com/arduino/arduino/issues" rel="nofollow">Suggestions &amp; Bugs</a>
+</p>
+<p class="vspace"></p><p class="sidehead"><a class="wikilink" href="https://playground.arduino.cc/Main/ElectroInfoResources/">Electronics Technique</a>
+</p>
+<p class="vspace"></p><p class="sidehead"><a class="wikilink" href="https://playground.arduino.cc/Main/Resources/">Sources for Electronic Parts</a>
+</p>
+<p class="vspace"></p><p class="sidehead"><a class="wikilink" href="https://playground.arduino.cc/Main/SimilarBoards/">Related Hardware and Initiatives</a>
+</p>
+<p class="vspace"></p><p class="sidehead"><a class="urllink" href="https://playground.arduino.cc/Main/People/" rel="nofollow">Arduino People/Groups &amp; Sites</a>
+</p>
+<p class="vspace"></p><p class="sidehead"><a class="urllink" href="https://playground.arduino.cc/Projects/ArduinoUsers/" rel="nofollow">Exhibition</a>
+</p>
+<p class="vspace"></p><p class="sidehead"><a class="urllink" href="https://playground.arduino.cc/Projects/Ideas/" rel="nofollow">Project Ideas</a>
+</p>
+<p class="vspace"></p><p class="sidehead"><a class="wikilink" href="https://playground.arduino.cc/Main/Languages/">Languages</a>
+</p>
+<p class="vspace"></p><hr>
+<p class="vspace"></p><p class="sidehead"> <a class="wikilink" href="https://playground.arduino.cc/Main/Participate/">Participate</a>
+</p><ul><li><a class="wikilink" href="https://playground.arduino.cc/Main/Participate/#contribrules">Formatting guidelines</a>
+</li><li><a class="wikilink" href="https://playground.arduino.cc/Site/AllRecentChanges/">All recent changes</a>
+</li><li><a class="wikilink" href="https://playground.arduino.cc/PmWiki/PmWiki/">PmWiki</a>
+</li><li><a class="wikilink" href="https://playground.arduino.cc/Main/WikiSandbox/">WikiSandBox training</a>
+</li><li><a class="wikilink" href="https://playground.arduino.cc/PmWiki/BasicEditing/">Basic Editing</a>
+</li><li><a class="urllink" href="https://www.pmwiki.org/wiki/PmWiki/DocumentationIndex" rel="nofollow">Documentation index</a>
+</li></ul><p class="vspace"></p>
+
+		</div>
+		<!--/PageLeftFmt-->
+
+		
+
+		<div id="pagetext" class="playground">
+				<!--PageText-->
+<div id="wikitext">
+<p>Arduino library to use timer 2 with a configurable resolution. Based on <a class="wikilink" href="https://playground.arduino.cc/Main/MsTimer2/">MsTimer2</a> by Javier Valencia.
+It's called <span class="wikiword">FlexiTimer2</span> because it's based on <span class="wikiword">MsTimer2</span>, but offers more flexibility, since it has a configurable timer resolution.
+</p>
+<p class="vspace"></p><p>It works on:
+</p><ul><li><span class="wikiword">ATmega1280</span> (thanks to Manuel Negri).
+</li><li><span class="wikiword">ATmega328</span> (thanks Jerome Despatis).
+</li><li><span class="wikiword">ATmega48</span>/88/168 and <span class="wikiword">ATmega128</span>/8.
+</li><li>Atmega2560
+</li><li>Teensy
+</li></ul><p class="vspace"></p><p>Originally written by <a class="urllink" href="https://wimleers.com/" rel="nofollow">Wim Leers</a> for the project associated with the "Mobile &amp; Pervasive Computing" course at <a class="urllink" href="http://www.uhasselt.be/" rel="nofollow">Hasselt University</a> in Belgium.
+</p>
+<p class="vspace"></p><h3>Methods</h3>
+<dl><dt><span class="wikiword">FlexiTimer2</span>::set(unsigned long units, double resolution, void (*f)()) </dt><dd>this function sets a time on <code>units</code> time the <code>resolution</code> for the overflow. Each overflow, "f" will be called. "f" has to be declared void with no parameters. E.g. <code>units=1</code>, <code>resolution = 1.0/3000</code> will call <code>f</code> 3000 times per second, whereas it would be called only 1500 times per second when <code>units=2</code>.
+</dd><dt><span class="wikiword">FlexiTimer2</span>::set(unsigned long ms, void (*f)()) </dt><dd>this function sets a time on ms (1/1000th of a second) for the overflow. Each overflow, "f" will be called. "f" has to be declared void with no parameters. Shorthand for calling the function above with <code>resolution = 0.001</code>.
+</dd><dt><span class="wikiword">FlexiTimer2</span>::start() </dt><dd>enables the interrupt.
+</dd><dt><span class="wikiword">FlexiTimer2</span>::stop() </dt><dd>disables the interrupt.
+</dd></dl><p class="vspace"></p><h3>Source code</h3>
+<p><a class="urllink" href="https://github.com/wimleers/flexitimer2" rel="nofollow">Code hosted on GitHub</a>
+</p>
+<p class="vspace"></p><p>License: LGPL (like <span class="wikiword">MsTimer2</span>)
+</p>
+<p class="vspace"></p><p>Download:
+</p><ul><li><a class="urllink" href="https://github.com/wimleers/flexitimer2/zipball/v1.1" rel="nofollow">FlexiTimer2.zip</a>
+</li><li><a class="urllink" href="https://github.com/wimleers/flexitimer2/tarball/v1.1" rel="nofollow">FlexiTimer2.tgz</a>
+</li></ul><p class="vspace"></p><p>A fork is available here:
+</p><ul><li><a class="urllink" href="https://www.pjrc.com/teensy/td_libs_MsTimer2.html" rel="nofollow">a new version is available here</a>
+</li></ul><p class="vspace"></p><p>After downloading the zip file, rename the zip file something simple like "<span class="wikiword">FlexiTimer2</span>.zip". (The Arduino IDE sometimes chokes on zip files with dashes or other symbols in the file name).
+</p>
+<p class="vspace"></p><p>Install it like any other Arduino library. (See <a class="urllink" href="https://arduino.cc/en/Guide/Libraries" rel="nofollow">http://arduino.cc/en/Guide/Libraries</a> ).
+It should end up in the {arduino-path}/hardware/libraries/ folder.
+</p>
+<p class="vspace"></p><h3>Example (<span class="wikiword">MsTimer2</span> compatibility)</h3>
+<p>This example is *identical* to the one for <span class="wikiword">MsTimer2</span>, but "Ms" has been replaced with "Flexi". Really, that's all you have to do to port your code, if you want to be prepared for more granular control, but don't need it yet.
+</p>
+<p class="vspace"></p><pre>// Toggle LED on pin 13 each second
+#include &lt;FlexiTimer2.h&gt;
+
+void flash() {
+  static boolean output = HIGH;
+
+  digitalWrite(13, output);
+  output = !output;
+}
+
+void setup() {
+  pinMode(13, OUTPUT);
+
+  FlexiTimer2::set(500, flash); // 500ms period
+  FlexiTimer2::start();
+}
+
+void loop() {
+}
+</pre>
+<p class="vspace"></p><h4>Important note</h4>
+<p>The line
+</p><pre>FlexiTimer2::set(500, flash);
+
+</pre><p>is equivalent with
+</p><pre>FlexiTimer2::set(500, 1.0/1000, flash);
+
+</pre><p>The latter configures a resolution of 1/1000th of a second, i.e.: 1 millisecond.
+</p>
+<p class="vspace"></p><h3>Example</h3>
+<p>In this example, we show how to use <span class="wikiword">FlexiTimer2</span> to achieve sub-millisecond resolution for your interrupts.
+</p>
+<p class="vspace"></p><p>The original author of <span class="wikiword">FlexiTimer2</span> needed to simulate PWM over a 8x8 multiplexed grid of <span class="wikiword">LEDs</span>. Without going into detail on that, he needed 2880 interrupts per second to update the <span class="wikiword">LEDs</span> to be able to generate a decent range of colors.
+</p>
+<p class="vspace"></p><pre>#include &lt;FlexiTimer2.h&gt;
+
+void simulatePWM() {
+    // Add your code to simulate PWM here.
+}
+
+void setup() {
+  FlexiTimer2::set(1, 1.0/2880, simulatePWM);
+  FlexiTimer2::start();
+}
+
+void loop() {
+}
+</pre>
+<p class="vspace"></p><p>Note that the PWM signals created by Timer 2 will become unusable while Flexitimer2 is using Timer 2.
+</p>
+<p class="vspace"></p><p>On Arduino Uno, those are pins 3 and 11.
+</p>
+<p class="vspace"></p><p>On Arduino Mega, those are pins 9 and 10.
+</p>
+<p class="vspace"></p><h3>Bugs</h3>
+<p>Report bugs in the <a class="urllink" href="https://github.com/wimleers/flexitimer2/issues" rel="nofollow">issue queue</a>.
+</p>
+</div>
+
+
+				
+			</div> <!-- eof pagetext -->
+		
+		<br class="clear">
+		
+	</div> <!-- eof page -->
+		
+	
+	<script src="./Arduino Playground - FlexiTimer2_files/jquery-1.10.2.min.js.下载"></script>
+	<script src="./Arduino Playground - FlexiTimer2_files/foundation.min.js.下载"></script>
+	<script>
+	  $(document).foundation();
+	</script>
+	<!--<![endif]-->
+	<!--[if IE 8]>
+	<script src="//content.arduino.cc/legacy/js/foundation_ie8.min.js"></script>
+	<script src="//content.arduino.cc/legacy/js/ie8/jquery.foundation.alerts.js"></script>
+	<script src="//content.arduino.cc/legacy/js/app.js"></script>
+	<![endif]-->
+	
+    <div>
+      <div id="newsletter-modal"></div>
+      <div id="footer" data-ref="0.2653624841757707"><div id="ino-footer-block" class="ino-footer-block">
+  <div class="app-footer-header">
+    <div class="app-footer-header__logo app-footer-logo logo-arduino" id="footer-logo"><svg xmlns="http://www.w3.org/2000/svg" width="102" height="14" fill="none" data-inject-url="https://cdn.arduino.cc/header-footer/prod/assets/footerLogo-arduino.svg">
+  <path d="M0 13.812L4.162.19h3.784l4.351 13.622H8.703l-.757-2.649H4.162l-.757 2.649H0zM6.054 3.595L4.73 8.515h2.648l-1.324-4.92zM14.378.19h5.486c3.784 0 5.108 1.891 5.108 4.54 0 1.892-.756 3.216-2.27 3.973l2.649 4.919h-3.973l-1.892-4.163h-1.703v4.352h-3.405V.189zm7.19 4.54c0-1.135-.38-1.892-2.082-1.892h-1.703v3.784h1.703c1.324.189 2.081-.379 2.081-1.892zM27.811.19h4.352c5.108 0 6.81 2.459 6.81 6.62 0 3.217-.945 6.812-6.81 6.812h-4.54V.189h.188zm3.406 2.648v7.946h1.324c2.838 0 3.027-1.703 3.027-3.973 0-2.649-.19-3.973-3.216-3.973h-1.135zM48.81.19h3.217V9.08C52.027 13.054 49 14 46.541 14c-2.27 0-5.298-.757-5.298-4.919V.19h3.406v8.324c0 2.27.756 2.838 2.08 2.838 1.514 0 2.082-.756 2.082-2.838V.19zM55.054 10.973h3.594V3.027h-3.405V.189h10.405v2.838h-3.594v7.946h3.594v2.838H55.243v-2.838h-.19zM71.325 13.622h-3.217V.189h3.784l4.352 8.135V.19h3.216v13.622h-3.406l-4.54-8.703-.19 8.514zM93.082 7c0 3.973-1.514 7-5.865 7-3.973 0-5.676-2.27-5.676-6.81 0-4.163 1.514-7.19 5.676-7.19 3.973 0 5.865 1.703 5.865 7zm-3.595 0c0-3.405-.19-4.162-2.27-4.162-1.703-.19-2.081.946-2.081 4.351 0 2.649.189 4.162 2.08 4.162 2.082-.189 2.271-1.324 2.271-4.351zM95.352 3.027C95.352 1.324 96.676 0 98.189 0c1.703 0 3.027 1.324 3.027 3.027s-1.324 3.027-3.027 3.027c-1.513-.19-2.837-1.513-2.837-3.027zm5.297 0c0-1.324-.946-2.46-2.46-2.46-1.324 0-2.27.947-2.27 2.46 0 1.514 1.135 2.46 2.27 2.46 1.514 0 2.46-.946 2.46-2.46zm-3.973-1.892h1.703c1.135 0 1.513.568 1.513 1.135 0 .379-.19.757-.567 1.135l.567 1.325h-1.135l-.378-1.135H98V4.73h-1.135V1.135h-.19zm1.513 1.703c.379 0 .568-.19.568-.568 0-.378-.19-.378-.568-.378h-.378v.946h.378z" fill="currentColor"></path>
+</svg></div>
+
+    <div class="app-footer-header__controls no-select app-footer-controls" id="footer-controls"><div class="app-footer-button" id="go-top">
+  <div class="app-footer-button__icon"><svg xmlns="http://www.w3.org/2000/svg" id="control-icon-back2top" viewBox="0 0 15 14" data-inject-url="https://cdn.arduino.cc/header-footer/prod/assets/footerControl-back2top.svg">
+  <path d="M10.3125 8.40628C10.2508 8.40664 10.1896 8.39481 10.1325 8.37149C10.0754 8.34816 10.0235 8.31379 9.97965 8.27034L7.49996 5.78597L5.02028 8.27034C4.97657 8.31405 4.92469 8.34872 4.86758 8.37237C4.81048 8.39603 4.74927 8.4082 4.68746 8.4082C4.62566 8.4082 4.56445 8.39603 4.50735 8.37237C4.45024 8.34872 4.39836 8.31405 4.35465 8.27034C4.31095 8.22664 4.27628 8.17475 4.25262 8.11765C4.22897 8.06054 4.2168 7.99934 4.2168 7.93753C4.2168 7.87572 4.22897 7.81452 4.25262 7.75742C4.27628 7.70031 4.31095 7.64843 4.35465 7.60472L7.16715 4.79222C7.21073 4.74828 7.26257 4.71341 7.31969 4.68961C7.37682 4.66582 7.43808 4.65356 7.49996 4.65356C7.56185 4.65356 7.62311 4.66582 7.68023 4.68961C7.73736 4.71341 7.7892 4.74828 7.83278 4.79222L10.6453 7.60472C10.6892 7.6483 10.7241 7.70014 10.7479 7.75726C10.7717 7.81438 10.7839 7.87565 10.7839 7.93753C10.7839 7.99941 10.7717 8.06068 10.7479 8.1178C10.7241 8.17492 10.6892 8.22677 10.6453 8.27034C10.6015 8.31379 10.5495 8.34816 10.4924 8.37149C10.4353 8.39481 10.3742 8.40664 10.3125 8.40628Z" fill="currentColor"></path>
+  <path d="M7.5 13.5625C6.20206 13.5625 4.93327 13.1776 3.85407 12.4565C2.77488 11.7354 1.93374 10.7105 1.43704 9.51136C0.940343 8.31222 0.810384 6.99272 1.0636 5.71972C1.31682 4.44672 1.94183 3.2774 2.85961 2.35961C3.7774 1.44183 4.94672 0.816815 6.21972 0.5636C7.49272 0.310384 8.81222 0.440343 10.0114 0.937043C11.2105 1.43374 12.2354 2.27488 12.9565 3.35407C13.6776 4.43327 14.0625 5.70206 14.0625 7C14.0625 8.74049 13.3711 10.4097 12.1404 11.6404C10.9097 12.8711 9.24049 13.5625 7.5 13.5625ZM7.5 1.375C6.38748 1.375 5.29995 1.7049 4.37492 2.32299C3.44989 2.94107 2.72892 3.81957 2.30318 4.84741C1.87744 5.87524 1.76604 7.00624 1.98309 8.09738C2.20013 9.18853 2.73586 10.1908 3.52253 10.9775C4.3092 11.7641 5.31148 12.2999 6.40262 12.5169C7.49376 12.734 8.62476 12.6226 9.6526 12.1968C10.6804 11.7711 11.5589 11.0501 12.177 10.1251C12.7951 9.20006 13.125 8.11252 13.125 7C13.125 5.50816 12.5324 4.07742 11.4775 3.02253C10.4226 1.96764 8.99185 1.375 7.5 1.375Z" fill="currentColor"></path>
+</svg></div>
+  <span class="app-footer-button__text">Back to top</span>
+</div></div>
+  </div>
+
+  <div class="app-footer-content main">
+    <div class="footer-menu-desktop app-footer-menu-desktop"><div class="app-footer-menu-desktop__item"><div class="app-footer-menu-desktop__link"><a href="https://www.arduino.cc/en/Trademark/HomePage"><span title="Trademark">Trademark</span></a></div><div class="app-footer-menu-desktop__link"><a href="https://www.arduino.cc/en/contact-us"><span title="Contact Us">Contact Us</span></a></div><div class="app-footer-menu-desktop__link"><a href="https://store.arduino.cc/distributors"><span title="Distributors">Distributors</span></a></div><div class="app-footer-menu-desktop__link"><a href="https://careers.arduino.cc/"><span title="Careers">Careers</span></a></div></div><div class="app-footer-menu-desktop__item"><div class="app-footer-menu-desktop__link"><a href="https://support.arduino.cc/"><span title="Help Center">Help Center</span></a></div></div></div>
+
+    <div class="news-letter arduino-view">
+      <newsletter data-ref="0.48397106858020456"><div class="newsletter-form">
+    <h4 id="newsletter-input-label">Newsletter</h4>
+    <div class="subscribe-wrapper">
+        <div id="newsletter-email-error" class="upper-error-notif">Please insert a valid email</div>
+        <div class="input-wrapper">
+            <input id="newsletter-email" aria-labelledby="newsletter-input-label" type="email" name="email" class="email" placeholder="Enter your email to sign up">
+            <button id="subscribe-btn" aria-label="Subscribe" class="button">Subscribe</button>
+        </div>
+    </div>
+</div></newsletter>
+    </div>
+
+    <div class="social-container app-footer-social-apps"><h4>FOLLOW US</h4>
+<div class="app-footer-social-btns">
+  <div class="app-footer-social-btn">
+    <a href="https://www.facebook.com/official.arduino" target="_blank" id="facebook" class="facebook" rel="noopener">
+      <div class="app-footer-social-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" id="social-facebook" viewBox="0 0 7 13" data-inject-url="https://cdn.arduino.cc/header-footer/prod/assets/footerSocial-facebook.svg">
+  <path d="M4.66301 3.54026V4.93745H6.72426L6.39488 7.08901H4.66301V12.3749H2.33613V7.08901H0.450195V4.93745H2.33613V3.3012C2.33613 1.43651 3.44645 0.405884 5.14645 0.405884C5.70345 0.413533 6.25917 0.46147 6.80926 0.549321V2.38213H5.87426C5.71438 2.35869 5.55126 2.37203 5.39731 2.42112C5.24336 2.47021 5.10264 2.55377 4.98585 2.66544C4.86906 2.77711 4.77927 2.91395 4.72333 3.06554C4.66739 3.21713 4.64676 3.37949 4.66301 3.54026Z" fill="currentColor"></path>
+</svg>
+      </div>
+    </a>
+  </div>
+  <div class="app-footer-social-btn">
+    <a href="https://www.instagram.com/arduino.cc/" target="_blank" id="instagram" class="instagram" rel="noopener">
+      <div class="app-footer-social-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" id="social-instagram" viewBox="0 0 13 14" data-inject-url="https://cdn.arduino.cc/header-footer/prod/assets/footerSocial-instagram.svg">
+  <path d="M6.5 1.772c1.7 0 1.902 0 2.577.038.404.006.805.081 1.184.223a2.066 2.066 0 011.206 1.206c.142.379.217.78.223 1.184.032.675.037.877.037 2.577s0 1.902-.037 2.577a3.541 3.541 0 01-.223 1.184 2.065 2.065 0 01-1.206 1.206c-.379.142-.78.217-1.184.223-.675.032-.877.037-2.577.037s-1.902 0-2.577-.037a3.542 3.542 0 01-1.184-.223 2.066 2.066 0 01-1.206-1.206 3.543 3.543 0 01-.223-1.184C1.278 8.902 1.272 8.7 1.272 7s0-1.902.038-2.577c.006-.404.081-.805.223-1.184a2.066 2.066 0 011.206-1.206c.379-.142.78-.217 1.184-.223.675-.032.877-.038 2.577-.038zm0-1.147c-1.732 0-1.95 0-2.63.037A4.654 4.654 0 002.324.96 3.224 3.224 0 00.46 2.824 4.654 4.654 0 00.162 4.37C.125 5.05.125 5.268.125 7c0 1.732 0 1.95.037 2.63.01.528.111 1.05.298 1.546a3.225 3.225 0 001.864 1.864 4.65 4.65 0 001.546.298c.68.037.898.037 2.63.037 1.732 0 1.95 0 2.63-.037a4.65 4.65 0 001.546-.298 3.226 3.226 0 001.864-1.864c.184-.487.284-1 .298-1.52.037-.706.037-.924.037-2.656 0-1.732 0-1.95-.037-2.63a4.65 4.65 0 00-.298-1.546A3.226 3.226 0 0010.676.96c-.487-.184-1-.284-1.52-.298C8.45.625 8.232.625 6.5.625z" fill="currentColor"></path>
+  <path d="M6.5 3.728a3.273 3.273 0 100 6.545 3.273 3.273 0 000-6.545zm0 5.397a2.125 2.125 0 110-4.25 2.125 2.125 0 010 4.25zM9.906 4.36a.765.765 0 100-1.53.765.765 0 000 1.53z" fill="currentColor"></path>
+</svg>
+      </div>
+    </a>
+  </div>
+  <div class="app-footer-social-btn">
+    <a href="https://twitter.com/arduino" target="_blank" id="twitter" class="twitter" rel="noopener">
+      <div class="app-footer-social-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" id="social-twitter" viewBox="0 0 13 11" data-inject-url="https://cdn.arduino.cc/header-footer/prod/assets/footerSocial-twitter.svg">
+  <path d="M4.545 10.36a7.04 7.04 0 007.087-7.092V2.95a5.13 5.13 0 001.243-1.29c-.457.2-.94.332-1.434.393.522-.311.913-.802 1.1-1.382a5.233 5.233 0 01-1.595.606 2.491 2.491 0 00-4.308 1.705 2.22 2.22 0 00.064.569A7.071 7.071 0 011.575.94a2.497 2.497 0 00.776 3.326 2.444 2.444 0 01-1.126-.33v.032a2.497 2.497 0 001.997 2.444 2.619 2.619 0 01-1.126.043 2.492 2.492 0 002.327 1.732A4.994 4.994 0 011.325 9.25a4.422 4.422 0 01-.595 0 6.975 6.975 0 003.815 1.126" fill="currentColor"></path>
+</svg>
+      </div>
+    </a>
+  </div>
+  <div class="app-footer-social-btn">
+    <a href="https://github.com/arduino/" target="_blank" id="github" class="github" rel="noopener">
+      <div class="app-footer-social-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" id="social-github" viewBox="0 0 11 13" data-inject-url="https://cdn.arduino.cc/header-footer/prod/assets/footerSocial-github.svg">
+  <path d="M6.85 8.337a1.77 1.77 0 01.504 1.382v2.008a.531.531 0 01-.409.531 7.52 7.52 0 01-2.869 0 .531.531 0 01-.409-.531v-1.233c-2.066.447-2.502-.998-2.502-.998a1.97 1.97 0 00-.829-1.09c-.674-.456.054-.451.054-.451a1.562 1.562 0 011.136.77 1.594 1.594 0 002.168.617c.03-.377.196-.73.467-.994C2.515 8.157.777 7.52.777 4.672a2.869 2.869 0 01.744-2.003A2.656 2.656 0 011.596.687s.621-.201 2.045.76a7.066 7.066 0 013.719 0C8.783.502 9.405.687 9.405.687c.275.622.302 1.325.074 1.966.503.542.777 1.258.765 1.998 0 2.874-1.737 3.5-3.394 3.686z" fill="currentColor"></path>
+</svg>
+      </div>
+    </a>
+  </div>
+  <div class="app-footer-social-btn">
+    <a href="https://www.linkedin.com/company/arduino" target="_blank" id="linkedin" class="linkedin" rel="noopener">
+      <div class="app-footer-social-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" id="social-linkedin" viewBox="0 0 11 12" data-inject-url="https://cdn.arduino.cc/header-footer/prod/assets/footerSocial-linkedin.svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.863 11.313h2.125V7.338c-.006-.18.02-.36.075-.531A1.222 1.222 0 017.237 6c.967 0 1.307.616 1.307 1.525v3.787h2.167V7.239c0-2.067-.632-3.188-2.576-3.188A2.183 2.183 0 006.01 5.33V4.205H3.885c.031.633 0 7.109 0 7.109h-.022z" fill="currentColor"></path>
+  <path d="M1.361 3.248a1.28 1.28 0 100-2.56 1.28 1.28 0 000 2.56zM2.45 4.204H.247v7.109h2.205V4.204z" fill="currentColor"></path>
+</svg>
+      </div>
+    </a>
+  </div>
+  <div class="app-footer-social-btn">
+    <a href="https://www.youtube.com/user/arduinoteam" target="_blank" id="youtube" class="youtube" rel="noopener">
+      <div class="app-footer-social-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" id="social-youtube" viewBox="0 0 15 12" data-inject-url="https://cdn.arduino.cc/header-footer/prod/assets/footerSocial-youtube.svg">
+  <path d="M14.624 2.398a1.854 1.854 0 00-1.312-1.323C12.154.762 7.5.762 7.5.762s-4.653 0-5.811.313A1.854 1.854 0 00.376 2.398 19.407 19.407 0 00.063 6a19.407 19.407 0 00.313 3.602 1.855 1.855 0 001.313 1.323c1.158.313 5.811.313 5.811.313s4.654 0 5.812-.313a1.855 1.855 0 001.313-1.323c.216-1.188.32-2.394.313-3.602a19.412 19.412 0 00-.314-3.602zM5.981 8.21V3.79L9.864 6 5.981 8.21z" fill="currentColor"></path>
+</svg>
+      </div>
+    </a>
+  </div>
+</div></div>
+  </div>
+
+  <div class="footer-mobile-menu-list app-footer-menu-mobile"><div class="app-footer-menu-mobile__link"><a href="https://www.arduino.cc/en/Trademark/HomePage"><span title="Trademark">Trademark</span></a></div><div class="app-footer-menu-mobile__link"><a href="https://www.arduino.cc/en/contact-us"><span title="Contact Us">Contact Us</span></a></div><div class="app-footer-menu-mobile__link"><a href="https://store.arduino.cc/distributors"><span title="Distributors">Distributors</span></a></div><div class="app-footer-menu-mobile__link"><a href="https://careers.arduino.cc/"><span title="Careers">Careers</span></a></div><div class="app-footer-menu-mobile__link"><a href="https://support.arduino.cc/"><span title="Help Center">Help Center</span></a></div><div class="app-footer-menu-mobile__link"><a href="https://www.arduino.cc/en/Main/TermsOfService"><span title="Terms Of Service">Terms Of Service</span></a></div><div class="app-footer-menu-mobile__link"><a href="https://www.arduino.cc/en/Main/PrivacyPolicy"><span title="Privacy Policy">Privacy Policy</span></a></div><div class="app-footer-menu-mobile__link"><a href="https://www.arduino.cc/en/Main/Security"><span title="Security">Security</span></a></div><div class="app-footer-menu-mobile__link"><a class="iubenda-cs-preferences-link" role="button"><span title="Cookie Settings">Cookie Settings</span></a></div></div>
+
+  <div class="app-footer-bottom">
+    <div class="app-footer-bottom__left footer-year app-footer-copyright" id="footer-copyright"><p id="footer-copyright-container">
+  <a href="https://www.arduino.cc/en/Main/CopyrightNotice" id="footer-copyright-url">
+    <span class="text">
+      © <span id="current-year">2021</span> Arduino
+    </span>
+  </a>
+</p></div>
+
+    <div class="app-footer-bottom__middle">
+      <div class="footer-menu-copyright app-footer-menu-copyright"><div class="app-footer-menu-copyright__link"><a href="https://www.arduino.cc/en/Main/TermsOfService"><span title="Terms Of Service">Terms Of Service</span></a></div><div class="app-footer-menu-copyright__link"><a href="https://www.arduino.cc/en/Main/PrivacyPolicy"><span title="Privacy Policy">Privacy Policy</span></a></div><div class="app-footer-menu-copyright__link"><a href="https://www.arduino.cc/en/Main/Security"><span title="Security">Security</span></a></div><div class="app-footer-menu-copyright__link"><a class="iubenda-cs-preferences-link" role="button"><span title="Cookie Settings">Cookie Settings</span></a></div></div>
+    </div>
+
+    <div class="app-footer-bottom__right payments" id="footer-payments">
+      <!-- right -->
+    </div>
+  </div>
+  
+  <div class="footer-help-container" style="bottom: 36px;">
+    <a href="https://support.arduino.cc/" aria-haspopup="true" aria-label="Help" class="footer-help-button">
+      <span class="footer-help-icon" type="Icon">
+        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><title></title><g id="Layer_4"><path d="M11,12.3V13c0,0-1.8,0-2,0v-0.6c0-0.6,0.1-1.4,0.8-2.1c0.7-0.7,1.6-1.2,1.6-2.1c0-0.9-0.7-1.4-1.4-1.4 c-1.3,0-1.4,1.4-1.5,1.7H6.6C6.6,7.1,7.2,5,10,5c2.4,0,3.4,1.6,3.4,3C13.4,10.4,11,10.8,11,12.3z"></path><circle cx="10" cy="15" r="1"></circle><path d="M10,2c4.4,0,8,3.6,8,8s-3.6,8-8,8s-8-3.6-8-8S5.6,2,10,2 M10,0C4.5,0,0,4.5,0,10s4.5,10,10,10s10-4.5,10-10S15.5,0,10,0 L10,0z"></path></g></svg>
+      </span>
+      <span class="footer-help-text">Help</span>
+    </a>
+  </div>
+</div><!-- footer-block -->
+</div>
+    </div>
+  <script src="./Arduino Playground - FlexiTimer2_files/index.v2.js.下载" type="text/javascript"></script>
+  <script type="text/javascript">
+    new window.arduinoHF.Header(document.getElementById('header'), new arduinoHF.CustomAuth({ no_auth: true }), { env: 'prod', state: '', style: 'arduino' });
+    new window.arduinoHF.Footer(document.getElementById('footer'), { env: 'prod', style: 'arduino' });
+  </script><div data-ref="0.3633409016924265"><div class="modal info-modal" style="display: none;">
+    <div class="modal-backdrop"></div>
+    <div class="modal-body" data-ref="0.8862470109150493"><div class="privacy">
+
+    <h1>Privacy consent</h1>
+
+    <div>
+        <p>
+            Arduino cares about the privacy and personal data of its users. The <a href="https://www.arduino.cc/en/Main/PrivacyPolicy" target="_blank" rel="noopener">privacy policy</a> is meant to inform you on how we process your personal data when you use our services.
+        </p>
+
+        <ul class="privacy-settings">
+            <li>
+                <div class="upper-error-notif privacy-error">Please confirm that you have read the privacy policy</div>
+                <label class="checkbox">
+        <input type="checkbox" id="privacy-consent" name="privacy-consent" value="privacy_approval">
+
+        <span class="custom-checkbox"></span>
+        <span>I confirm to have read the privacy policy<span class="required-asterisk">*</span></span>
+      </label>
+            </li>
+            <li>
+                <div class="upper-error-notif newsletter-error">Please confirm your consent to receive the newsletter</div>
+                <label class="checkbox">
+        <input type="checkbox" id="newsletter-consent" name="newsletter-consent" value="newsletter_approval" checked="checked">
+
+        <span class="custom-checkbox"></span>
+        <span>I confirm my consent to receive your newsletter<span class="required-asterisk">*</span></span>
+      </label>
+            </li>
+            <li>
+                <label class="checkbox">
+        <input type="checkbox" id="marketing-consent" value="marketing_approval">
+        <span class="custom-checkbox"></span>
+        <span>I confirm my consent to the processing of my personal data for marketing purposes, consisting in commercial offers sent via email</span>
+      </label>
+            </li>
+            <li>
+                <label class="checkbox">
+        <input type="checkbox" id="tracking-consent" value="tracking_approval">
+        <span class="custom-checkbox"></span>
+        <span>I confirm my consent to automated processing of my personal data, by means of profiling, in order to receive commercial offers customized on the basis of my browsing and purchasing behavior</span>
+      </label>
+            </li>
+        </ul>
+        <div class="my-error-notification">
+            <div id="newsletterSubscribeStatus"></div>
+        </div>
+        <section class="buttons-wrapper">
+            <button name="Cancel" class="button secondary cancel">Cancel</button>
+            <button name="Ok" class="primary button submit">Ok</button>
+        </section>
+    </div>
+</div></div>
+</div></div><div data-ref="0.4856369214541092"><div class="modal info-modal" style="display: none;">
+    <div class="modal-backdrop"></div>
+    <div class="modal-body" data-ref="0.20812734028047042"><div class="confirm">
+  <h1>Confirm your email address</h1>
+  <p>
+    We need to confirm your email address.<br> To complete the subscription, please click the link in the email we just sent you.
+  </p>
+  <p>
+    Thank you for subscribing!
+  </p>
+  <section class="buttons-wrapper">
+    <button name="Ok" class="button submit">Ok</button>
+  </section>
+</div></div>
+</div></div>
+
+
+<iframe id="redeviation-bs-sidebar" class="notranslate" aria-hidden="true" data-theme="default" data-pos="left" src="./Arduino Playground - FlexiTimer2_files/saved_resource.html"></iframe><div id="redeviation-bs-indicator" data-theme="default" class="redeviation-bs-fullHeight" style="width: 21px; height: 100%; top: 0%;"></div><iframe src="./Arduino Playground - FlexiTimer2_files/iframe_bridge-1.3.1.html" aria-hidden="true" title="Iframe bridge" style="width:0px; height:0px; display:none; visibility:hidden"></iframe></body></html>

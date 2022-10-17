@@ -1,0 +1,37 @@
+#######################################
+# Syntax Coloring Map For LobotServoController
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+LobotServvo	KEYWORD1
+LobotServoController	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+moveServo	KEYWORD2
+moveServos	KEYWORD2
+moveServos	KEYWORD2
+moveServos	KEYWORD2
+runActionGroup	KEYWORD2
+stopActionGroup	KEYWORD2
+setActionGroupSpeed	KEYWORD2
+setAllActionGroupSpeed	KEYWORD2
+getBatteryVoltage	KEYWORD2
+receiveHandle	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+FRAME_HEADER	LITERAL1
+CMD_SERVO_MOVE	LITERAL1
+CMD_ACTION_GROUP_RUN	LITERAL1
+CMD_ACTION_GROUP_STOP	LITERAL1
+CMD_ACTION_GROUP_SPEED	LITERAL1
+CMD_GET_BATTERY_VOLTAGE	LITERAL1
+BATTERY_VOLTAGE	LITERAL1
+ACTION_GROUP_RUNNING	LITERAL1
+ACTION_GROUP_STOPPED	LITERAL1
+ACTION_GROUP_COMPLETE	LITERAL1

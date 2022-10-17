@@ -1,0 +1,9 @@
+AccelStepper --- 步进电机的库文件
+FlexiTimer2 --- 陀螺仪数据更新使用的定时器2的库文件
+JY901 --- HWT101陀螺仪的库文件（维特系列都是该库文件）
+LobotServoController  --- 机械臂控制板的库文件
+I2Cdev --- iic的库文件，您的库文件中如果有这个，忽略即可
+
+2021/10/5  ----- 知乎 Poao
+工训系列文章：
+https://zhuanlan.zhihu.com/p/366523960
