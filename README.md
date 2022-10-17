@@ -18,3 +18,4 @@ Project codes and reference material of automated guided vehicle for Engineering
 - PID算法优化：http://brettbeauregard.com/blog/2011/04/improving-the-beginners-pid-introduction/
 - Arduino理论速成指南：https://blog.csdn.net/xq151750111/category_10847153.html
 - 配件购买及备赛指南：https://zhuanlan.zhihu.com/p/433498924
+- 文本生成二维码网站：https://cli.im/text
