@@ -13,3 +13,7 @@ Project codes and reference material of automated guided vehicle for Engineering
 - 5. 大赛细则及规范
 - 6. 其他
 - 7. 方案文档
+- 工程实践创新大赛备赛参考资料：https://zhuanlan.zhihu.com/p/365851952
+- 视觉相关OpenMV官方指南：https://book.openmv.cc/
+- PID算法优化：http://brettbeauregard.com/blog/2011/04/improving-the-beginners-pid-introduction/
+- 
