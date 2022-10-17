@@ -12,3 +12,4 @@ Project codes and reference material of automated guided vehicle for Engineering
   - 其他 
 - 5. 大赛细则及规范
 - 6. 其他
+- 7. 方案文档
