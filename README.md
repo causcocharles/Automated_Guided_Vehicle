@@ -16,4 +16,4 @@ Project codes and reference material of automated guided vehicle for Engineering
 - 工程实践创新大赛备赛参考资料：https://zhuanlan.zhihu.com/p/365851952
 - 视觉相关OpenMV官方指南：https://book.openmv.cc/
 - PID算法优化：http://brettbeauregard.com/blog/2011/04/improving-the-beginners-pid-introduction/
-- 
+- Arduino理论速成指南：https://blog.csdn.net/xq151750111/category_10847153.html
